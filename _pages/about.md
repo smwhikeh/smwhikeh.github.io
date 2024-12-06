@@ -16,7 +16,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Hi! I'm Sophie a data-driven **Master of Public Health [MPH]** candidate at the [University of Washington Department of Global Health](https://globalhealth.washington.edu/). I recieved my Bachelor's degree from the [University of Washington](https://anthropology.washington.edu/) and doubled majored in Human Evolutionary Biology and Medical and Global Anthroplogy with a minor in Data Science. 
+Hi! I'm Sophie a data-driven **Master of Public Health [MPH]** candidate at the [University of Washington Department of Global Health](https://globalhealth.washington.edu/). I recieved my Bachelor's degree from the University of Washington and doubled majored in **Human Evolutionary Biology** and **Medical Anthropology of Global Health** with a minor in **Data Science**. 
 
 
 I have a strong passion for **applied biostatistics** and transformation of **complex datasets** into actionable insights. I have hands-on experience in R, Python and Java and I am skilled at **extracting**, **analyzing** and **quality-controlling data** to support **multidisciplinary research efforts**. 
