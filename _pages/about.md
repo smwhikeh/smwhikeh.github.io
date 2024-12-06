@@ -19,7 +19,7 @@ social: true # includes social icons at the bottom of the page
 Hi! I'm Sophie a data-driven **Master of Public Health [MPH]** candidate at the [University of Washington Department of Global Health](https://globalhealth.washington.edu/). I recieved my Bachelor's degree from the [University of Washington](https://anthropology.washington.edu/) and doubled majored in Human Evolutionary Biology and Medical and Global Anthroplogy with a minor in Data Science. 
 
 
-I have a strong passion for **applied biostatistics** and transformation of **complex datasets** into actionable insights. I have hands-on experience in R, Python and Java and I am skilled at **extracting**, **analyzing** and **quality-controlling data** to support multidisciplinary research efforts. 
+I have a strong passion for **applied biostatistics** and transformation of **complex datasets** into actionable insights. I have hands-on experience in R, Python and Java and I am skilled at **extracting**, **analyzing** and **quality-controlling data** to support **multidisciplinary research efforts**. 
 
 
 Currently, I am collaborating with the **IHME HIV/TB and Infectious Disease GBD Team** for my MPH thesis. I am currently leading a **systematic review** and **meta-analysis** on the long-term impact of diarrheal pathogens [ex - Shigella, Campylobacter, E.coli etc] on childhood growth impairment. 
@@ -28,7 +28,7 @@ Currently, I am collaborating with the **IHME HIV/TB and Infectious Disease GBD 
 
 As I work toward my career aspirations, I continue to to gain experience in global health research, complex large-scale data management and analytics, and data visualization. 
 
-When I'm not imersed in research or data, you can find me outdoors running, hiking, biking, skiing or swimming. I also enjoy curating spotify playlists, cooking, knitting, my cat Mookie and painting. 
+When I'm not imersed in research or data, you can find me outdoors running, hiking, biking, skiing or swimming. I also enjoy curating spotify playlists, cooking, knitting, and painting. 
 
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
