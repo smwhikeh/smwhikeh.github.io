@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://smwhikeh.github.iosmwhikeh.github.io/sitemap.xml
+Sitemap: https://smwhikeh.github.io/sitemap.xml
