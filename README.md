@@ -1,6 +1,6 @@
 # Github Page for Sophie's Academic Website 
 
-Welcome to my github page for my academic website! 
+Welcome to my GitHub page for my academic website! 
 
 This page is still a work in progress as I learn more about HTML and Tailwind CSS customization. :)
 
