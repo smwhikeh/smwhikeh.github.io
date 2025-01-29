@@ -7,8 +7,8 @@ main:
   - name: Home
     url: /
     weight: 10
-  - name: Publications
-    url: /#publications
+  - name: Papers
+    url: /#papers
     weight: 11
   - name: Talks
     url: /#talks
