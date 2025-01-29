@@ -1,17 +1,17 @@
 ---
 # Display name
-title: 吳健雄
+title: Sophie Mei Lin Whikehart
 
 # Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+name_pronunciation: 
 
 # Full name (for SEO)
-first_name: Shiung Wu
-last_name: Chien
+first_name: Sophie 
+last_name: Whikehart
 
 # Status emoji
-status:
-  icon: ☕️
+#status:
+ # icon: ☕️
 
 # Is this the primary user of the site?
 superuser: true
@@ -20,69 +20,70 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Chief Scientist
+role: MPH Department of Global Health
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: OpenAI
-    url: https://openai.com/
+  - name: University of Washington
+    url: https://globalhealth.washington.edu/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
-  - icon: at-symbol
-    url: 'mailto:your-email@example.com'
-    label: E-mail Me
-  - icon: brands/x
-    url: https://twitter.com/GetResearchDev
-  - icon: brands/instagram
-    url: https://www.instagram.com/
+  #- icon: at-symbol
+  # url: 'mailto:your-email@example.com'
+  # label: E-mail Me
+  #- icon: brands/x
+  #  url: https://twitter.com/GetResearchDev
+  #- icon: brands/instagram
+  #  url: https://www.instagram.com/
   - icon: brands/github
-    url: https://github.com/gcushen
+    url: https://github.com/smwhikeh
   - icon: brands/linkedin
-    url: https://www.linkedin.com/
+    url: https://www.linkedin.com/in/sophie-mei-lin-whikehart-1084b4196/
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/
+    url: https://scholar.google.com/citations?user=yXck-7oAAAAJ&hl=en
   - icon: academicons/orcid
-    url: https://orcid.org/
+    url: https://orcid.org/my-orcid?orcid=0000-0001-7919-9056
 
-interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+#interests:
+# - Artificial Intelligence
+##  - Computational Linguistics
+# - Information Retrieval
 
-education:
-  - area: PhD Artificial Intelligence
-    institution: Stanford University
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
-    button:
-      text: 'Read Thesis'
-      url: 'https://example.com'
-  - area: MEng Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.8/4.0
 
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: BSc Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.4/4.0
+#education:
+ # - area: PhD Artificial Intelligence
+ #  institution: Stanford University
+  #  date_start: 2016-01-01
+ #   date_end: 2020-12-31
+  #  summary: |
+ #     Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
+  #  button:
+  #    text: 'Read Thesis'
+   #   url: 'https://example.com'
+  #- area: MEng Artificial Intelligence
+  #  institution: Massachusetts Institute of Technology
+   # date_start: 2016-01-01
+  #  date_end: 2020-12-31
+  #  summary: |
+  #    GPA: 3.8/4.0
+
+   #   Courses included:
+   #   - lorem ipsum dolor sit amet, consectetur adipiscing elit
+   #   - lorem ipsum dolor sit amet, consectetur adipiscing elit
+   #   - lorem ipsum dolor sit amet, consectetur adipiscing elit
+  #- area: BSc Artificial Intelligence
+  #  institution: Massachusetts Institute of Technology
+  #  date_start: 2016-01-01
+   # date_end: 2020-12-31
+   # summary: |
+   #   GPA: 3.4/4.0
       
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+   #   Courses included:
+   #   - lorem ipsum dolor sit amet, consectetur adipiscing elit
+   #   - lorem ipsum dolor sit amet, consectetur adipiscing elit
+    ##  - lorem ipsum dolor sit amet, consectetur adipiscing elit
 work:
   - position: Director of Cloud Infrastructure
     company_name: GenCoin
@@ -183,4 +184,23 @@ awards:
 
 ## About Me
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+I am a **Master's in Public Health (MPH) Candidate** at the [University of Washington](https://globalhealth.washington.edu/) in the Department of Global Health specializing in **Biostatistics** and **Health Metric Sciences**. 
+
+I completed my Bachelor's at the University of Washington where I double majored in [Human Evolutionary Biology](https://anthropology.washington.edu/human-evolutionary-biology-ba) and [Medical Anthropology & Global Health](https://anthropology.washington.edu/medical-anthropology-global-health-ba) with a minor in [Data Science](https://dataminor.uw.edu/).
+
+I am passionate about **biomedical data analysis**, **statistical modeling**, **data visualization** and **machine learning**. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
