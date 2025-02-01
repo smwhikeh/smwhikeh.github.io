@@ -7,11 +7,11 @@ authors:
 author_notes:
 - "Conceptualization: S.M.R., A.M.M.; Methodology: S.M.R.; Software: S.M.R.; Validation: S.M.R., S.M.W.; Formal analysis: S.M.R., S.M.W.; Investigation: S.M.R.; Resources: A.M.M.; Data curation: S.M.W.; Writing - original draft: S.M.R.; Writing - review & editing: A.M.M.; Visualization: S.M.R.; Supervision: A.M.M.; Project administration: A.M.M.; Funding acquisition: S.M.R., A.M.M."
 #- "Equal contribution"
-date: "2015-09-01T00:00:00Z"
+date: "2023-02-21T00:00:00Z"
 doi: "https://doi.org/10.1242/bio.059698"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2017-01-01T00:00:00Z"
+publishDate: "2023-02-21T00:00:00Z"
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -49,9 +49,10 @@ url_source: ''
 url_video: ''
 
 # Featured image
+
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/jdD8gXaTZsc)'
+  #caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/jdD8gXaTZsc)'
   focal_point: ""
   preview_only: false
 
