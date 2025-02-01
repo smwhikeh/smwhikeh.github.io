@@ -46,44 +46,76 @@ profiles:
   - icon: academicons/orcid
     url: https://orcid.org/my-orcid?orcid=0000-0001-7919-9056
 
-#interests:
-# - Artificial Intelligence
-##  - Computational Linguistics
-# - Information Retrieval
+interests:
+  - Biomedical Data Analysis 
+  - Statistical Modeling
+  - Machine Learning and Artifical Intelligence
+
+education:
+  - area: Master's in Public Health (MPH) Global Health
+    institution: University of Washington
+    date_start: 2023-09-01
+    date_end: 2025-03-01
+    summary: |
+
+      GPA: 3.8/4.0
+
+      Courses Included:
+        - Quantitative 
+          - BIOST 511, 512, 546
+          - EPI 512, 513, 527
+        - Public Health / Global Health 
+          - G H 511, 593, 532
+          - PHI 511, 513, 514, 515, 516
+          - MED 561
+        - Data Science 
+          - HMS 520, 591
+          - INFO 201
+          - CS&SS 569
 
 
-#education:
- # - area: PhD Artificial Intelligence
- #  institution: Stanford University
-  #  date_start: 2016-01-01
- #   date_end: 2020-12-31
-  #  summary: |
- #     Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
-  #  button:
-  #    text: 'Read Thesis'
-   #   url: 'https://example.com'
-  #- area: MEng Artificial Intelligence
-  #  institution: Massachusetts Institute of Technology
-   # date_start: 2016-01-01
-  #  date_end: 2020-12-31
-  #  summary: |
-  #    GPA: 3.8/4.0
 
-   #   Courses included:
-   #   - lorem ipsum dolor sit amet, consectetur adipiscing elit
-   #   - lorem ipsum dolor sit amet, consectetur adipiscing elit
-   #   - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  #- area: BSc Artificial Intelligence
-  #  institution: Massachusetts Institute of Technology
-  #  date_start: 2016-01-01
-   # date_end: 2020-12-31
-   # summary: |
-   #   GPA: 3.4/4.0
+
+      Thesis on Long-Term Effects of Select Diarrheal Pathogens on Childhood Growth: A Systematic Review and Meta-Analysis. Supervised by [Hmwe Hmwe Kyu, MBBS, MPH, PhD](https://globalhealth.washington.edu/faculty/hmwe-kyu), [Peng Zheng, PhD](https://depts.washington.edu/healthms/people/peng-zheng/) and [Amanda Novotney, MPH]()
       
-   #   Courses included:
-   #   - lorem ipsum dolor sit amet, consectetur adipiscing elit
-   #   - lorem ipsum dolor sit amet, consectetur adipiscing elit
-    ##  - lorem ipsum dolor sit amet, consectetur adipiscing elit
+    button:
+      text: 'Read Thesis Proposal'
+      url: 'https://example.com'
+
+
+
+
+
+
+  - area: MEng Artificial Intelligence
+    institution: Massachusetts Institute of Technology
+    date_start: 2016-01-01
+    date_end: 2020-12-31
+    summary: |
+      GPA: 3.8/4.0
+
+      Courses included:
+      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+
+
+    button:
+      text: 'Read practicum'
+      url: 'https://example.com'
+
+      
+  - area: BSc Artificial Intelligence
+    institution: Massachusetts Institute of Technology
+    date_start: 2016-01-01
+    date_end: 2020-12-31
+    summary: |
+      GPA: 3.4/4.0
+      
+      Courses included:
+      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - lorem ipsum dolor sit amet, consectetur adipiscing elit
 work:
   - position: Director of Cloud Infrastructure
     company_name: GenCoin
@@ -188,7 +220,7 @@ I am a **Master's in Public Health (MPH) Candidate** at the [University of Washi
 
 I completed my Bachelor's at the University of Washington where I double majored in [Human Evolutionary Biology](https://anthropology.washington.edu/human-evolutionary-biology-ba) and [Medical Anthropology & Global Health](https://anthropology.washington.edu/medical-anthropology-global-health-ba) with a minor in [Data Science](https://dataminor.uw.edu/).
 
-I am passionate about **biomedical data analysis**, **statistical modeling**, **data visualization** and **machine learning**. 
+ My expertise includes **data extraction**, **disease modeling**, and **machine learning** applications in **biomedical data**. I am passionate about leveraging **data science** to inform **public health** interventions and focus on **equity and diversity**. In the future, I aspire to help generate **health metrics** and **data visualizations** that drive **global health research** and promote equitable health outcomes, particularly in **low and middle-income countries (LMICs)** and for **women, neonatal and child health (MNCH)**. 
 
 
 
