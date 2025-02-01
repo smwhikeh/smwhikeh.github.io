@@ -60,74 +60,40 @@ education:
 
       GPA: 3.8/4.0
 
-      Courses Included:
-        - Quantitative 
-          - BIOST 511, 512, 546
-          - EPI 512, 513, 527
-        - Public Health / Global Health 
-          - G H 511, 593, 532
-          - PHI 511, 513, 514, 515, 516
-          - MED 561
-        - Data Science 
-          - HMS 520, 591
-          - INFO 201
-          - CS&SS 569
-
-
-
-
       Thesis on Long-Term Effects of Select Diarrheal Pathogens on Childhood Growth: A Systematic Review and Meta-Analysis. Supervised by [Hmwe Hmwe Kyu, MBBS, MPH, PhD](https://globalhealth.washington.edu/faculty/hmwe-kyu), [Peng Zheng, PhD](https://depts.washington.edu/healthms/people/peng-zheng/) and [Amanda Novotney, MPH]()
       
+
     button:
       text: 'Read Thesis Proposal'
       url: 'https://example.com'
-
-
-
-
-
-
-  - area: MEng Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.8/4.0
-
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-
-
-    button:
-      text: 'Read practicum'
-      url: 'https://example.com'
-
       
-  - area: BSc Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+  - area: B.A. Human Evolutionary Biology and Medical Anthropology & Global Health 
+    institution: University of Washington
+    date_start: 2019-09-01
+    date_end: 2022-06-01
     summary: |
-      GPA: 3.4/4.0
-      
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      GPA: 3.75/4.0
 work:
-  - position: Director of Cloud Infrastructure
-    company_name: GenCoin
+  - position: Graduate Research Assistant
+    company_name: UW Medicine
     company_url: ''
     company_logo: ''
-    date_start: 2021-01-01
+    date_start: 2024-05-01
     date_end: ''
-    summary: |2-
+    summary: |
       Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - Aid with semi-structured in-depth interviews with racial and ethnic minority patients with CF to explore perceptions of individual, social and structural barriers to participation on clinical trails. 
+      - Qualitative coding and codebook creation using Dedoose software
+      - Thematic data analysis in Dedoose using a systematic and iterative context analysis approach that is both theory-driven and inductive to identify new themes not previously considered.
+      - Building and managing online databases and surveys using REDCap.
+      - Contribution to interview guide, manuscript and steering commitee meetings.
+
+      Skills:
+
+        - Diversity and Inclusion
+        - REDCap
+        - Dedoose
+        - Epic Systems
   - position: Backend Software Engineer
     company_name: X
     company_url: ''
@@ -143,44 +109,61 @@ work:
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
 skills:
-  - name: Technical Skills
+  - #name: Technical Skills
     items:
-      - name: Python
+      - name: R 
         description: ''
-        percent: 80
+        #percent: 80
         icon: code-bracket
-      - name: Data Science
+      - name: Python
         description: ''
         percent: 100
         icon: chart-bar
-      - name: SQL
+      - name: Java
         description: ''
         percent: 40
         icon: circle-stack
-  - name: Hobbies
+  - #name: Hobbies
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
-      - name: Hiking
+      - name: Git / GitHub
         description: ''
         percent: 60
         icon: person-simple-walk
-      - name: Cats
+      - name: Linear Models
         description: ''
         percent: 100
         icon: cat
-      - name: Photography
+      - name: Statistics
         description: ''
         percent: 80
         icon: camera
+  - #name: Hobbies
+    color: '#eeac02'
+    color_border: '#f0bf23'
+    items:
+      - name: Machine Learning
+        description: ''
+        percent: 60
+        icon: person-simple-walk
+      - name: Dedoose
+        description: ''
+        percent: 100
+        icon: cat
+      - name: Latex / Overleaf
+        description: ''
+        percent: 80
+        icon: camera
+  
 
-languages:
-  - name: English
-    percent: 100
-  - name: Chinese
-    percent: 75
-  - name: Portuguese
-    percent: 25
+#languages:
+#  - name: English
+ #   percent: 100
+ # - name: Chinese
+ #   percent: 75
+#  - name: Portuguese
+ #   percent: 25
 
 # Awards.
 #   Add/remove as many awards below as you like.
@@ -220,7 +203,9 @@ I am a **Master's in Public Health (MPH) Candidate** at the [University of Washi
 
 I completed my Bachelor's at the University of Washington where I double majored in [Human Evolutionary Biology](https://anthropology.washington.edu/human-evolutionary-biology-ba) and [Medical Anthropology & Global Health](https://anthropology.washington.edu/medical-anthropology-global-health-ba) with a minor in [Data Science](https://dataminor.uw.edu/).
 
- My expertise includes **data extraction**, **disease modeling**, and **machine learning** applications in **biomedical data**. I am passionate about leveraging **data science** to inform **public health** interventions and focus on **equity and diversity**. In the future, I aspire to help generate **health metrics** and **data visualizations** that drive **global health research** and promote equitable health outcomes, particularly in **low and middle-income countries (LMICs)** and for **women, neonatal and child health (MNCH)**. 
+My expertise includes **data extraction**, **disease modeling**, and **machine learning** applications in **biomedical data**. I am passionate about leveraging **data science** to inform **public health** interventions and focus on **equity and diversity**. In the future, I aspire to help generate **health metrics** and **data visualizations** that drive **global health research** and promote equitable health outcomes, particularly in **low and middle-income countries (LMICs)** and for **women, neonatal and child health (MNCH)**.
+
+  
 
 
 
