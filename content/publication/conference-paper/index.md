@@ -1,20 +1,25 @@
+
+<!--
+
 ---
-title: 'An example conference paper'
+title: 'Deep Learning Enabled Multi-Organ Segmentation of Mouse Embryos'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
+  - Sara Rolfe
   - admin
-  - Robert Ford
+  - Ali Murat Maga
 
 # Author notes (optional)
-author_notes:
-  - 'Equal contribution'
-  - 'Equal contribution'
+#author_notes:
+#  - 'Equal contribution'
+#  - 'Equal contribution'
 
-date: '2013-07-01T00:00:00Z'
-doi: ''
+
+date: '2023-02-21T00:00:00Z'
+doi: '10.1242/bio.059698'
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2017-01-01T00:00:00Z'
@@ -28,7 +33,7 @@ publication_types: ['paper-conference']
 publication: In *Hugo Blox Builder Conference*
 publication_short: In *ICW*
 
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+abstract: The International Mouse Phenotyping Consortium (IMPC) has generated a large repository of three-dimensional (3D) imaging data from mouse embryos, providing a rich resource for investigating phenotype/genotype interactions. While the data is freely available, the computing resources and human effort required to segment these images for analysis of individual structures can create a significant hurdle for research. In this paper, we present an open source, deep learning-enabled tool, Mouse Embryo Multi-Organ Segmentation (MEMOS), that estimates a segmentation of 50 anatomical structures with a support for manually reviewing, editing, and analyzing the estimated segmentation in a single application. MEMOS is implemented as an extension on the 3D Slicer platform and is designed to be accessible to researchers without coding experience. We validate the performance of MEMOS-generated segmentations through comparison to state-of-the-art atlas-based segmentation and quantification of previously reported anatomical abnormalities in a Cbx4 knockout strain.This article has an associated First Person interview with the first author of the paper.
 
 # Summary. An optional shortened abstract.
 summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
@@ -37,7 +42,7 @@ tags:
   - Large Language Models
 
 # Display this page in the Featured widget?
-featured: true
+featured: false
 
 # Custom links (uncomment lines below)
 # links:

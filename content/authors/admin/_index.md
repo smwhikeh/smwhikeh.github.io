@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Sophie Mei Lin Whikehart
+title: Sophie M. Whikehart
 
 # Name pronunciation (optional)
 name_pronunciation: 
