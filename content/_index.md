@@ -24,7 +24,7 @@ sections:
         color: black
         image:
           # Add your image background to `assets/media/`.
-          filename: mount.jpg
+          filename: sky.jpg
           filters:
             brightness: 0.5
           size: cover
