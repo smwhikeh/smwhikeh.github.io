@@ -63,10 +63,8 @@ education:
       Thesis on Long-Term Effects of Select Diarrheal Pathogens on Childhood Growth: A Systematic Review and Meta-Analysis. Supervised by [Hmwe Hmwe Kyu, MBBS, MPH, PhD](https://globalhealth.washington.edu/faculty/hmwe-kyu) and [Peng Zheng, PhD](https://depts.washington.edu/healthms/people/peng-zheng/)
       
 
-    button:
-      text: 'Read Thesis'
-      url: 'https://example.com'
-      
+    
+  
   - area: B.A. Human Evolutionary Biology and Medical Anthropology & Global Health
     institution: University of Washington
     date_start: 2019-09-01
@@ -77,7 +75,7 @@ education:
       GPA: 3.75
 work:
 
-  - position: Volunteer
+  - position: MPH Thesis
     company_name: Institute For Health Metrics and Evaluation
     date_start: 2024-06-01
     date_end: 2025-03-21
@@ -97,7 +95,9 @@ work:
         - Data Visualization 
         - Systematic Review 
         - DistillerSR 
-
+    button:
+      text: 'Download Thesis'
+      url: 'https://example.com'
 
   - position: Graduate Research Assistant, MPH Practicum 
     company_name: UW Medicine
@@ -126,7 +126,7 @@ work:
 
     
     button:
-      text: 'Read Practicum'
+      text: 'Download Practicum'
       url: 'https://example.com'
 
   - position: Research Technician I
