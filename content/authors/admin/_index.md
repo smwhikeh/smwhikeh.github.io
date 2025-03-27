@@ -49,7 +49,7 @@ profiles:
 interests:
   - Biomedical Data Analysis 
   - Statistical Modeling
-  - Machine Learning and Artifical Intelligence
+  - Machine Learning and Artificial Intelligence
 
 education:
   - area: Master's in Public Health (MPH) Global Health

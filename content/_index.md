@@ -17,16 +17,16 @@ sections:
       # Show a call-to-action button under your biography? (optional)
       button:
         text: Download CV
-        url: uploads/resume.pdf
+        url: uploads/whikehart_cv.pdf
     design:
-      css_class: light
+      css_class: dark
       background:
         color: black
         image:
           # Add your image background to `assets/media/`.
-          filename: mount.png
+          filename: mount.jpg
           filters:
-            brightness: 0.9
+            brightness: 0.5
           size: cover
           position: center
           parallax: false
