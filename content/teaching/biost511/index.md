@@ -1,14 +1,46 @@
 ---
-title: Learn JavaScript
-summary: Easily learn JavaScript in 10 minutes!
+title: BIOST 511 Medical Biometry I 
+summary: Final Project from BIOST 511
 date: 2023-10-24
 type: docs
 math: false
 tags:
-  - JavaScript
+  - Biostatistics
 image:
   caption: 'Embed rich media such as videos and LaTeX math'
+
 ---
+
+## BIOST 511: Medical Biometry I
+
+This class covered the presentation of the principels and methods of data description and elemtnary parametric and nonparametric statisitcal analysis. 
+
+Examples were drawn from biomedical literatuer and real data sets were analyzed after a brief introduction to the use of standard statistical computer packages in `RStudio`. 
+
+Statistical Techniques covered included description of samples, comparison of two sample means and proportions, simple linear regression and correlation.
+
+### Final Project Data Analysis Plan (Part 1)
+
+- Co-authored with Tessa Fujisaki MPHc, Thania Solar M.D., MPHc, and Sian Siam MPHc.
+
+This was a creation of a statistical analysis plan. We wrote a statistical hypothesis and proposed analysis that included descriptive analysis comprising of basic data descirption, evaluation/comparison of subgroups, identification of outliers and patterns and checked for assumptions of normality for interfential analysis (ex - normality, linearity, mean/variance relationships)
+
+---
+
+
+
+
+
+## BIOST 512: Medical Biometry II
+
+## BIOST 546: Machine Learning
+
+
+
+
+
+
+
 
 [Hugo Blox Builder](https://hugoblox.com) is designed to give technical content creators a seamless experience. You can focus on the content and the Hugo Blox Builder which this template is built upon handles the rest.
 

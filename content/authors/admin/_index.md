@@ -58,43 +58,78 @@ education:
     date_end: 2025-03-01
     summary: |
 
-      GPA: 3.8/4.0
+      GPA: 3.79
 
-      Thesis on Long-Term Effects of Select Diarrheal Pathogens on Childhood Growth: A Systematic Review and Meta-Analysis. Supervised by [Hmwe Hmwe Kyu, MBBS, MPH, PhD](https://globalhealth.washington.edu/faculty/hmwe-kyu), [Peng Zheng, PhD](https://depts.washington.edu/healthms/people/peng-zheng/) and [Amanda Novotney, MPH]()
+      Thesis on Long-Term Effects of Select Diarrheal Pathogens on Childhood Growth: A Systematic Review and Meta-Analysis. Supervised by [Hmwe Hmwe Kyu, MBBS, MPH, PhD](https://globalhealth.washington.edu/faculty/hmwe-kyu) and [Peng Zheng, PhD](https://depts.washington.edu/healthms/people/peng-zheng/)
       
 
     button:
-      text: 'Read Thesis Proposal'
+      text: 'Read Thesis'
       url: 'https://example.com'
       
-  - area: B.A. Human Evolutionary Biology and Medical Anthropology & Global Health 
+  - area: B.A. Human Evolutionary Biology and Medical Anthropology & Global Health
     institution: University of Washington
     date_start: 2019-09-01
     date_end: 2022-06-01
     summary: |
-      GPA: 3.75/4.0
+      Minor: Data Science 
+
+      GPA: 3.75
 work:
-  - position: Graduate Research Assistant
+
+  - position: Volunteer
+    company_name: Institute For Health Metrics and Evaluation
+    date_start: 2024-06-01
+    date_end: 2025-03-21
+    summary: |
+      **Global Burden of Disease (GBD) - HIV/AIDs, Tuberculosis and Select Infectious Diseases Team**
+
+      Responsibilities included:
+      - Conducted a **systematic review** and **meta-analysis** to identify relevant studies on the long-term impact of diarrheal pathogen infections (*Shigella spp.,* *Campylobacter spp.,* *Enterotoxigenic E. coli*, *Enteropathogenic E. coli*, *Norovirus*, *Cryptosporidium spp.,* *Rotavirus* and *Adenovirus*) on **childhood growth metrics** such as **height-for-age Z scores (HAZ)**, **weight-for-age Z scores (WAZ)** and **weight-for-height Z scores (WHZ)**.
+      - Ran Ti/Ab and full-text screening with semi-automated methods using **DistillerSR**.
+      - **Extracted data** from full-text articles, used **IHME GBD extraction sheet template** to capture relevant data (ex - study design, population, outcomes related to childhood growth), piloted extraction sheet and refined as needed.
+      - Performed **meta-analysis** using **R** `metafor` package, taking into account different types of biases associated with each data source to produce **summary effect sizes** per pathogen-specific diarrhea episode on growth metrics and created **forest plots** for **data visualization**.
+
+      Skills:
+
+        - Data Extraction
+        - Meta-Analysis using R `metafor` package
+        - Data Visualization 
+        - Systematic Review 
+        - DistillerSR 
+
+
+  - position: Graduate Research Assistant, MPH Practicum 
     company_name: UW Medicine
     company_url: ''
     company_logo: ''
     date_start: 2024-05-01
     date_end: ''
     summary: |
-      Responsibilities include:
-      - Aid with semi-structured in-depth interviews with racial and ethnic minority patients with CF to explore perceptions of individual, social and structural barriers to participation on clinical trails. 
-      - Qualitative coding and codebook creation using Dedoose software
-      - Thematic data analysis in Dedoose using a systematic and iterative context analysis approach that is both theory-driven and inductive to identify new themes not previously considered.
-      - Building and managing online databases and surveys using REDCap.
-      - Contribution to interview guide, manuscript and steering commitee meetings.
+      **Cystic Fibrosis (CF) Clinical Research Team within the Pulmonary, Critical Care & Sleep Medicine Division at the University of Washington Medical Center**
+
+      Responsibilities included:
+      - Aid with **semi-structured in-depth interviews** with racial and ethnic minority patients with **cystic fibrosis** (CF) to explore perceptions of individual, social and structural barriers to participation on clinical trails. 
+      - Built and managed **administrative tasks** of online databases and surveys using **REDCap** as well as scheduling, booking and organizing interviews for PI.
+      - **Qualitative coding** and codebook creation using **Dedoose software**.
+      - **Thematic data analysis** in **Dedoose** using a systematic and iterative context analysis approach that is both theory-driven and inductive to identify new themes not previously considered.
+      - Contribution to interview guide, manuscript and steering committee meetings.
 
       Skills:
 
+        - Qualitative Codebook Creation
+        - Qualitative Thematic Analysis
         - Diversity and Inclusion
         - REDCap
         - Dedoose
         - Epic Systems
-  - position: Backend Software Engineer
+
+    
+    button:
+      text: 'Read Practicum'
+      url: 'https://example.com'
+
+  - position: Research Technician I
     company_name: X
     company_url: ''
     company_logo: ''
@@ -108,53 +143,54 @@ work:
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
-skills:
-  - #name: Technical Skills
-    items:
-      - name: R 
-        description: ''
+
+#skills:
+ # - #name: Technical Skills
+ #   items:
+ #     - name: R 
+ #       description: ''
         #percent: 80
-        icon: code-bracket
-      - name: Python
-        description: ''
-        percent: 100
-        icon: chart-bar
-      - name: Java
-        description: ''
-        percent: 40
-        icon: circle-stack
-  - #name: Hobbies
-    color: '#eeac02'
-    color_border: '#f0bf23'
-    items:
-      - name: Git / GitHub
-        description: ''
-        percent: 60
-        icon: person-simple-walk
-      - name: Linear Models
-        description: ''
-        percent: 100
-        icon: cat
-      - name: Statistics
-        description: ''
-        percent: 80
-        icon: camera
-  - #name: Hobbies
-    color: '#eeac02'
-    color_border: '#f0bf23'
-    items:
-      - name: Machine Learning
-        description: ''
-        percent: 60
-        icon: person-simple-walk
-      - name: Dedoose
-        description: ''
-        percent: 100
-        icon: cat
-      - name: Latex / Overleaf
-        description: ''
-        percent: 80
-        icon: camera
+ #       icon: code-bracket
+ #     - name: Python
+ #       description: ''
+ #       percent: 100
+ #       icon: chart-bar
+ #     - name: Java
+ #       description: ''
+ #       percent: 40
+ #       icon: circle-stack
+  #- #name: Hobbies
+ #   color: '#eeac02'
+ #   color_border: '#f0bf23'
+ #   items:
+ #     - name: Git / GitHub
+ #       description: ''
+ #       percent: 60
+ #       icon: person-simple-walk
+ #     - name: Linear Models
+ #       description: ''
+ #       percent: 100
+ #       icon: cat
+ #     - name: Statistics
+ #       description: ''
+ #       percent: 80
+ #       icon: camera
+ # - #name: Hobbies
+  #  color: '#eeac02'
+  #  color_border: '#f0bf23'
+   # items:
+   #   - name: Machine Learning
+   #     description: ''
+   #     percent: 60
+   #     icon: person-simple-walk
+   #   - name: Dedoose
+   #     description: ''
+   #     percent: 100
+   #     icon: cat
+   #   - name: Latex / Overleaf
+   #     description: ''
+   #     percent: 80
+   #     icon: camera
   
 
 #languages:

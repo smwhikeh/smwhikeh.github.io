@@ -19,12 +19,12 @@ sections:
       # Education or Experience section first?
       is_education_first: false
 
-  - block: resume-skills
-    content:
-      title: Skills 
-      username: admin
-    design:
-      show_skill_percentage: true
+ #- block: resume-skills
+ #   content:
+ #     title: Skills 
+ #     username: admin
+ #   design:
+ #     show_skill_percentage: true
 ---
 
   #- block: resume-awards

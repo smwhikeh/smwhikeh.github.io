@@ -1,11 +1,11 @@
 ---
-title: Learn Python
+title: PHI 512
 summary: Easily learn Python in 10 minutes!
 date: 2023-10-24
 type: docs
 math: false
 tags:
-  - Python
+  - Public Health
 image:
   caption: 'Embed rich media such as videos and LaTeX math'
 ---
