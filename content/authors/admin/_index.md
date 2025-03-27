@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Sophie M. Whikehart
+title: Sophie M. Whikehart, MPH
 
 # Name pronunciation (optional)
 name_pronunciation: 
@@ -235,7 +235,7 @@ awards:
 
 ## About Me
 
-I am a **Master's in Public Health (MPH) Candidate** at the [University of Washington](https://globalhealth.washington.edu/) in the Department of Global Health specializing in **Biostatistics** and **Health Metric Sciences**. 
+I am a recent **Master's in Public Health (MPH) Graduate** from the [University of Washington](https://globalhealth.washington.edu/) in the Department of Global Health specializing in **Biostatistics** and **Health Metric Sciences**. 
 
 I completed my Bachelor's at the University of Washington where I double majored in [Human Evolutionary Biology](https://anthropology.washington.edu/human-evolutionary-biology-ba) and [Medical Anthropology & Global Health](https://anthropology.washington.edu/medical-anthropology-global-health-ba) with a minor in [Data Science](https://dataminor.uw.edu/).
 
