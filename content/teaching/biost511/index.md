@@ -7,7 +7,7 @@ math: false
 tags:
   - Biostatistics
 image:
-  caption: 'Embed rich media such as videos and LaTeX math'
+  caption: 'BIOST511'
 
 ---
 ## Overview

@@ -1,140 +1,145 @@
 ---
-title: PHI 512
-summary: Easily learn Python in 10 minutes!
+title: BIOST 546 Machine Learning for Biomedical and Public Health Big Data
+summary: s
 date: 2023-10-24
 type: docs
 math: false
 tags:
-  - Public Health
+  - Machine Learning
 image:
   caption: 'Embed rich media such as videos and LaTeX math'
 ---
 
-[Hugo Blox Builder](https://hugoblox.com) is designed to give technical content creators a seamless experience. You can focus on the content and the Hugo Blox Builder which this template is built upon handles the rest.
+## Overview
 
-**Embed videos, podcasts, code, LaTeX math, and even test students!**
+This course provided an introduction to **statistical machine learning** methods for the analysis of biomedical data. It covered **high dimensional regression** and **classification methods**, **variable selection techniques**, **clustering** and **dimension reduction** methods. 
 
-On this page, you'll find some examples of the types of technical content that can be rendered with Hugo Blox.
+Through this course I was able to gain a better understanding of **supervised** and **unsupervised** machine learning models, characterize **bias variance trade-off**, understand connections between **machine learning approaches** and **classical statistical techniques**, translate scientific problems in **statistical models** that can be estimated using machine learning methods, select model's **hyper parameters** to **minimize generalization error** (ex - out of sample error) and apply **R** in variety of machine learning techniques (ex - **lasso and ridge regression**, **splines**, **generalized linear models**, and **neural nets**).
 
-## Video
+---
 
-Teach your course by sharing videos with your students. Choose from one of the following approaches:
+## Assignment #1
 
-{{< youtube D2vj0WcvH5c >}}
+This assignment analyzed **medical costs** billed by health insurance and focused on the **impact of BMI and smoking status** using **regression modeling**. It explored the **bias-variance trade-off** through **conceptual visualizations** and **numerical simulations**. 
 
-**Youtube**:
+### Medical Cost Analysis 
 
-    {{</* youtube w7Ft2ymGmfc */>}}
+**Data Preprocessing** 
 
-**Bilibili**:
+- Using the `Medical_Cost_2.RData`, I loaded in the dataset and checked for missing values.
+- Removed missing data using `na.omit()`
 
-    {{</* bilibili id="BV1WV4y1r7DF" */>}}
+**Exploratory Data Analysis**
 
-**Video file**
+- Created a scatter plot of `bmi (x-axis)` vs `charges (y-axis)` with color coding to distinguish smokers and non-smokers 
 
-Videos may be added to a page by either placing them in your `assets/media/` media library or in your [page's folder](https://gohugo.io/content-management/page-bundles/), and then embedding them with the _video_ shortcode:
+![scatter](scatter1.png)
 
-    {{</* video src="my_video.mp4" controls="yes" */>}}
+**Regression Modeling**
 
-## Podcast
+1. **Least-Squares Linear Models**
+    - `Model 1: charges ~ bmi`
+    - `Model 2: charges ~ bmi + smoker`
+    - `Model 3: charges ~ bmi * smoker` (interaction term included)
 
-You can add a podcast or music to a page by placing the MP3 file in the page's folder or the media library folder and then embedding the audio on your page with the _audio_ shortcode:
+- Reported estimated **regression coefficients** and **interpretation**
+- Computed **95% CI** for `bmi` coefficient and provided interpretation 
+- Plotted **regression lines** on **scatter plot** 
+- Calculated **mean squared error (MSE)** for each model 
+- **Predicted** medical costs for smokers with `bmi = 29` and `bmi = 31.5`
+- **Computed and predicted** cost differences between smokers and non-smokers 
 
-    {{</* audio src="ambient-piano.mp3" */>}}
+![scatter2](scatter2.png)
 
-Try it out:
+2. **Interaction Model with New Variable**
 
-{{< audio src="ambient-piano.mp3" >}}
+- Created `smoker_bmi30p` a boolean variable for smokers with `bmi > 30`
+- Fit a linear model incorporating `bmi`, `smoker`, and `smoker_bmi30p`
+- Presented **estimated coefficients** and assessed statistical significance 
+- Discussed **implications** of **non-significant variables** and their effect on the scatter plot
+- Compared **cost differences** using this model vs the previous approach 
 
-## Test students
+![scatter3](scatter3.png)
 
-Provide a simple yet fun self-assessment by revealing the solutions to challenges with the `spoiler` shortcode:
+### Bias-Variance Trade-off Analysis 
 
-```markdown
-{{</* spoiler text="👉 Click to view the solution" */>}}
-You found me!
-{{</* /spoiler */>}}
-```
+**Conceptual Analysis**
 
-renders as
+- **Plot** showing squared bias, variance, irreducible error and expected prediction error as functions of model flexibility 
+- Illustrated training and test errors across varying model complexity levels 
 
-{{< spoiler text="👉 Click to view the solution" >}} You found me 🎉 {{< /spoiler >}}
+![bias](bias.png)
 
-## Math
+![test](test.png)
 
-Hugo Blox Builder supports a Markdown extension for $\LaTeX$ math. You can enable this feature by toggling the `math` option in your `config/_default/params.yaml` file.
+**Numerical Simulations** 
 
-To render _inline_ or _block_ math, wrap your LaTeX math with `{{</* math */>}}$...${{</* /math */>}}` or `{{</* math */>}}$$...$${{</* /math */>}}`, respectively.
+- Explored **bias-variance tradeoff** through numerical simulations. Investigated how model complexity affects bias and variance in regression. 
 
-{{% callout note %}}
-We wrap the LaTeX math in the Hugo Blox _math_ shortcode to prevent Hugo rendering our math as Markdown.
-{{% /callout %}}
+1. Data Generation 
 
-Example **math block**:
+    - Generated `X` using `rnorm()` and noise $\varepsilon${{< math >}}{{< /math >}} using `runif()`
+    - Defined true response function 
 
-```latex
-{{</* math */>}}
-$$
-\gamma_{n} = \frac{ \left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T \left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}
-$$
-{{</* /math */>}}
-```
+- **Predictor Variable (X):** A vector of length \( n = 30 \) generated using `rnorm()`.
+- **Noise (ε):** A vector of length \( n = 30 \) generated using `runif()`.
+- **Response Variable (Y):** Defined as:
+  
+  \[
+  Y = f_{true}(X) + \epsilon
+  \]
+  {{< math >}}{{< /math >}}
 
-renders as
+  where the true function is:
 
-{{< math >}}
-$$\gamma_{n} = \frac{ \left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T \left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}$$
-{{< /math >}}
+  \[
+  f_{true}(X) = 3 + 2X + 3X^3
+  \]
 
-Example **inline math** `{{</* math */>}}$\nabla F(\mathbf{x}_{n})${{</* /math */>}}` renders as {{< math >}}$\nabla F(\mathbf{x}_{n})${{< /math >}}.
+2. Model Fitting  
 
-Example **multi-line math** using the math linebreak (`\\`):
+Fit the response variable \( Y \) using **linear regression** with different polynomial representations:
 
-```latex
-{{</* math */>}}
-$$f(k;p_{0}^{*}) = \begin{cases}p_{0}^{*} & \text{if }k=1, \\
-1-p_{0}^{*} & \text{if }k=0.\end{cases}$$
-{{</* /math */>}}
-```
+- **Linear Model:**  
+  \[
+  f(X) = \beta_0 + \beta_1 X
+  \]
 
-renders as
+- **Quadratic Model:**  
+  \[
+  f(X) = \beta_0 + \beta_1 X + \beta_2 X^2
+  \]
 
-{{< math >}}
+- **Quartic Model:**  
+  \[
+  f(X) = \beta_0 + \beta_1 X + \beta_2 X^2 + \beta_3 X^3 + \beta_4 X^4
+  \]
 
-$$
-f(k;p_{0}^{*}) = \begin{cases}p_{0}^{*} & \text{if }k=1, \\
-1-p_{0}^{*} & \text{if }k=0.\end{cases}
-$$
+- **Cubic-Only Model:**  
+  \[
+  f(X) = \beta_0 + \beta_1 X + \beta_3 X^3
+  \]
 
-{{< /math >}}
+3. Model Evaluation  
 
-## Code
+**Training Error Analysis**  
+For each model, computed the **training mean squared error (MSE)** and analyze how model complexity impacts in-sample performance.
 
-Hugo Blox Builder utilises Hugo's Markdown extension for highlighting code syntax. The code theme can be selected in the `config/_default/params.yaml` file.
+**Test Error Analysis**  
+- Generated **10,000 new test observations** using the same data generation process.  
+- Evaluated the fitted models on this test set by computing the **test MSE**.  
+- Comparison of training vs. test MSE reveals insights into **overfitting vs. underfitting**.
 
+**Comparison to True Model**  
+- Computed the **true regression function's MSE** on both training and test data.
+- Compared the MSEs of the fitted models against the true function to assess bias and variance.
 
-    ```python
-    import pandas as pd
-    data = pd.read_csv("data.csv")
-    data.head()
-    ```
+### Conclusion
 
-renders as
+This assignment provided **insights** into medical cost data production using **regression modeling** and highlighted the balance between **model complexity** and **predictive accuracy** through **bias-variance trade-off**. 
 
-```python
-import pandas as pd
-data = pd.read_csv("data.csv")
-data.head()
-```
+[Download Full Assignment Report (PDF)](hw1.pdf)
 
-## Inline Images
+[GitHub Code Repository](https://github.com/smwhikeh/biost_546)
 
-```go
-{{</* icon name="python" */>}} Python
-```
-
-renders as
-
-{{< icon name="python" >}} Python
-
-## Did you find this page helpful? Consider sharing it 🙌
+---
