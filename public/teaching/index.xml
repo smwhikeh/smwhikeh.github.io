@@ -5,7 +5,7 @@
     <link>http://localhost:1313/teaching/</link>
       <atom:link href="http://localhost:1313/teaching/index.xml" rel="self" type="application/rss+xml" />
     <description>Portfolio</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 24 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 14 Dec 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://localhost:1313/media/icon_hu_65e1e165efa47c71.png</url>
       <title>Portfolio</title>
@@ -15,7 +15,7 @@
     <item>
       <title>BIOST 511 Medical Biometry I</title>
       <link>http://localhost:1313/teaching/biost511/</link>
-      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 14 Dec 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/teaching/biost511/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
 &lt;p&gt;This class covered the presentation of the principles and methods of &lt;strong&gt;data description&lt;/strong&gt; and elementary &lt;strong&gt;parametric&lt;/strong&gt; and &lt;strong&gt;nonparametric&lt;/strong&gt; statistical analysis.&lt;/p&gt;
