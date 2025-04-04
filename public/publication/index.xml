@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publications | Sophie Whikehart</title>
-    <link>http://localhost:1313/publication/</link>
-      <atom:link href="http://localhost:1313/publication/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://smwhikeh.github.io/publication/</link>
+      <atom:link href="https://smwhikeh.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 02 Jul 2024 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/media/icon_hu_65e1e165efa47c71.png</url>
+      <url>https://smwhikeh.github.io/media/icon_hu_65e1e165efa47c71.png</url>
       <title>Publications</title>
-      <link>http://localhost:1313/publication/</link>
+      <link>https://smwhikeh.github.io/publication/</link>
     </image>
     
     <item>
       <title>Morphological Simulation Tests the Limits on Phenotype Discovery in 3D Image Analysis</title>
-      <link>http://localhost:1313/publication/preprint/</link>
+      <link>https://smwhikeh.github.io/publication/preprint/</link>
       <pubDate>Tue, 02 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publication/preprint/</guid>
-      <description>&lt;p&gt;This work is driven by the results in &lt;a href=&#34;http://localhost:1313/publication/journal-article/&#34;&gt;MEMOS&lt;/a&gt;.&lt;/p&gt;
+      <guid>https://smwhikeh.github.io/publication/preprint/</guid>
+      <description>&lt;p&gt;This work is driven by the results in &lt;a href=&#34;https://smwhikeh.github.io/publication/journal-article/&#34;&gt;MEMOS&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Deep Learning Enabled Multi-Organ Segmentation of Mouse Embryos</title>
-      <link>http://localhost:1313/publication/journal-article/</link>
+      <link>https://smwhikeh.github.io/publication/journal-article/</link>
       <pubDate>Tue, 21 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publication/journal-article/</guid>
+      <guid>https://smwhikeh.github.io/publication/journal-article/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://localhost:1313/publication/conference-paper/</link>
+      <link>https://smwhikeh.github.io/publication/conference-paper/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publication/conference-paper/</guid>
+      <guid>https://smwhikeh.github.io/publication/conference-paper/</guid>
       <description>&lt;!--
 
 ---
