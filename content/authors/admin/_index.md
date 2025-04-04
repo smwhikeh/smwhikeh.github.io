@@ -97,7 +97,7 @@ work:
         - DistillerSR 
     button:
       text: 'Download Thesis'
-      url: 'https://example.com'
+      url: uploads/Sophie_Whikehart_Thesis_Final.pdf
 
   - position: Graduate Research Assistant, MPH Practicum 
     company_name: UW Medicine
@@ -127,19 +127,63 @@ work:
     
     button:
       text: 'Download Practicum'
-      url: 'https://example.com'
+      url: uploads/Exploring Barriers and Perceptions of Cystic Fibrosis (CF) Clinical Trial Participation Among Racial and Ethnic Minoritized Populations in the United States _ data report.pdf
 
   - position: Research Technician I
-    company_name: X
+    company_name: Seattle Children's Research Institute 
     company_url: ''
     company_logo: ''
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+    date_start: 2022-07-01
+    date_end: 2023-09-01
     summary: |
-      Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      Responsibilities included:
+
+      - Worked with KOMP2 genetic knockout strains for **performance validation**, **manual clean-up** and **update of training set** for MEMOs a **deep learning model** previous trained from ABM (Atlas Based Methods) that uses Fully Convolutional Neural Networks (FCNNs) as well as PyTorch and MONAI (Medical Open Network for Artificial Intelligence) libraries for **quantitative multi-organ segmentation** of mouse embryos.
+      - Designed and implemented **R scripts** for web scraping, querying, analysis, file processing and organization / automation of simple tasks. 
+      - Aided in wet lab **micro-CT** (computed tomography) scanning for mouse embryos, **iodine contrast staining** and **hydrogel-tissue hybridization protocol** that produced high resolution information from a complex biological system that is fully assembled but optically transparent and macromolecule-permeable.
+      - Navigated **Linux** command line interface and environment.
+      - Helped to **identify candidate genes** associated with developmental asymmetry and to validate these candidates, perform an **association study** using existing WGS (whole genome sequencing) data comparing two different ethnic cohorts with orofacial cleft (OFC) risk to control populations.
+      - Aimed to learn how **genotype imputation** especially for rare variants can be employed on more diverse populations and gain a better understanding of complex linkage disequilibrium structures.
+
+      Skills:
+
+      - Genetic Research
+      - Deep Learning Model Development 
+      - Web scraping
+      - Quantitative Imaging 
+      - Micro-CT Scanning
+      - Iodine Contrast Staining
+      - Hydrogel-Tissue Hybridization 
+      - Data Processing and Handling
+
+  - position: Undergraduate Student Research Volunteer
+    company_name: Seattle Children's Research Institute 
+    company_url: ''
+    company_logo: ''
+    date_start: 2022-02-01
+    date_end: 2022-07-01
+    summary: |
+
+      Responsibilities included:
+
+      - Gained proficiency with **SlicerMorph**, a **biomedical** and **computational analysis ecosystem** with visualization and segmentation capabilities built onto a python scriptable open-source library.
+      - Learned how **genomic differences** correlate with **phenotypic features** and how epigenetically modified genes are responsible for these differences.
+      - Created a **literature review** on **statistical shape models (SSMs)** and how SSMs can be applied to computational anatomy, geometric morphometric shape analysis, digital medical research, surgical/therapy planning, computer aided diagnosis, and other potential automated methods.
+
+      Skills:
+
+      - SlicerMorph
+      - Genomic Analysis
+      - Epigenetics
+      - Literature review 
+      - Statistical Shape Models (SSMs)
+
+    button:
+        text: 'Download Literature Review'
+        url: uploads/SSM_LIT_REVIEW_.pdf
+
+
+
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
