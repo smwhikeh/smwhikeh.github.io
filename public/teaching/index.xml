@@ -20,7 +20,7 @@
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
 &lt;p&gt;This class covered the presentation of the principles and methods of &lt;strong&gt;data description&lt;/strong&gt; and elementary &lt;strong&gt;parametric&lt;/strong&gt; and &lt;strong&gt;nonparametric&lt;/strong&gt; statistical analysis.&lt;/p&gt;
 &lt;p&gt;Examples were drawn from biomedical literature and real data sets were analyzed after a brief introduction to the use of standard statistical computer packages in &lt;code&gt;RStudio&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Statistical Techniques covered included description of samples, comparison of two sample means and proportions, simple linear regression and correlation.&lt;/p&gt;
+&lt;p&gt;Statistical Techniques covered included &lt;strong&gt;description of samples&lt;/strong&gt;, comparison of &lt;strong&gt;two sample means&lt;/strong&gt; and &lt;strong&gt;proportions&lt;/strong&gt;, &lt;strong&gt;simple linear regression&lt;/strong&gt; and &lt;strong&gt;correlation&lt;/strong&gt;.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;cardiovascular-health-study-statistical-data-analysis-plan-part-1&#34;&gt;Cardiovascular Health Study: Statistical Data Analysis Plan (Part 1)&lt;/h2&gt;
 &lt;h3 id=&#34;exploring-the-associations-between-hdl-cholesterol-family-history-of-heart-attack-and-coronary-heart-disease-in-adults-aged-65&#34;&gt;Exploring the Associations between HDL Cholesterol, Family History of Heart Attack, and Coronary Heart Disease in Adults Aged 65+&lt;/h3&gt;
@@ -330,11 +330,17 @@ renders as
     </item>
     
     <item>
-      <title>BIOST 512</title>
+      <title>BIOST 512 Medical Biometry II</title>
       <link>http://localhost:1313/teaching/biost512/</link>
       <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/teaching/biost512/</guid>
-      <description>&lt;p&gt;This class covered&lt;/p&gt;
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;This class covered &lt;strong&gt;multiple linear regression&lt;/strong&gt;, &lt;strong&gt;analysis of covariance (ANCOVA)&lt;/strong&gt; and &lt;strong&gt;one-way and two-way analysis of variance (ANOVA)&lt;/strong&gt;. Discussion was done on &lt;strong&gt;model assumptions&lt;/strong&gt;, &lt;strong&gt;interpretation&lt;/strong&gt;, &lt;strong&gt;transformations&lt;/strong&gt;, &lt;strong&gt;outlier detection&lt;/strong&gt;, &lt;strong&gt;dummy variables&lt;/strong&gt; and &lt;strong&gt;variable selection&lt;/strong&gt; procedures. Examples were drawn from biomedical literature and &lt;strong&gt;R&lt;/strong&gt; was utilized for statistical analysis.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;data-analysis-plan-for-life-expectancy&#34;&gt;Data Analysis Plan for Life Expectancy&lt;/h2&gt;
+&lt;p&gt;Collaborators:&lt;/p&gt;
+&lt;p&gt;This project utilized data from &lt;a href=&#34;https://data.worldbank.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;World Bank Open Data&lt;/a&gt; &amp;amp; &lt;a href=&#34;https://ourworldindata.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Our World in Data&lt;/a&gt;.  For this data analysis project, a subset of the data was used to focus on information available in years 2001 and 2019 and for a subset of variables from the &lt;a href=&#34;https://www.kaggle.com/datasets/mjshri23/life-expectancy-and-socio-economic-world-bank&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kaggle website&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Using the data &lt;code&gt;BIOST512-subset-LifeExpectancy.csv&lt;/code&gt;, importing, cleaning, creation of factor variables and analysis was done using &lt;strong&gt;Rstudio&lt;/strong&gt; and the packages, &lt;code&gt;psych&lt;/code&gt;, &lt;code&gt;rigr&lt;/code&gt;, &lt;code&gt;lattice&lt;/code&gt;, &lt;code&gt;tidyverse&lt;/code&gt;,&lt;code&gt;kableExtra&lt;/code&gt;, &lt;code&gt;ggplot2&lt;/code&gt;, &lt;code&gt;ggthemes&lt;/code&gt;.&lt;/p&gt;
 </description>
     </item>
     

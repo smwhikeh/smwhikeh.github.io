@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Sophie M. Whikehart, MPH
+title: Sophie Mei Lin Whikehart
 
 # Name pronunciation (optional)
 name_pronunciation: 
@@ -286,8 +286,7 @@ I am a recent **Master's in Public Health (MPH) Graduate** from the [University 
 
 I completed my Bachelor's at the University of Washington where I double majored in [Human Evolutionary Biology](https://anthropology.washington.edu/human-evolutionary-biology-ba) and [Medical Anthropology & Global Health](https://anthropology.washington.edu/medical-anthropology-global-health-ba) with a minor in [Data Science](https://dataminor.uw.edu/).
 
-My expertise includes **data extraction**, **disease modeling**, and **machine learning** applications in **biomedical data**. I am passionate about leveraging **data science** to inform **public health** interventions and focus on **equity and diversity**. In the future, I aspire to help generate **health metrics** and **data visualizations** that drive **global health research** and promote equitable health outcomes, particularly in **low and middle-income countries (LMICs)** and for **women, neonatal and child health (MNCH)**.
-
+I am proficient in R and Python for **data analysis**, **visualization**, and **statistical modeling**. I have experience in performing **in-depth analysis** of **large** and **complex** datasets to uncover **patterns**, **trends**, and **correlations**. My interests include **data extraction**, **disease modeling**, and **machine learning** applications in **biomedical data**. I am passionate about leveraging **data science** to inform health research.
   
 
 

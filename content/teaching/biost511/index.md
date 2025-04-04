@@ -16,7 +16,7 @@ This class covered the presentation of the principles and methods of **data desc
 
 Examples were drawn from biomedical literature and real data sets were analyzed after a brief introduction to the use of standard statistical computer packages in `RStudio`. 
 
-Statistical Techniques covered included description of samples, comparison of two sample means and proportions, simple linear regression and correlation.
+Statistical Techniques covered included **description of samples**, comparison of **two sample means** and **proportions**, **simple linear regression** and **correlation**.
 
 ---
 
