@@ -1,7 +1,7 @@
 ---
 title: BIOST 511 Medical Biometry I 
 summary: Statistical Data Analysis Plan and Report
-date: 2023-10-24
+date: 2024-12-23
 type: docs
 math: false
 tags:
