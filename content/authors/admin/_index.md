@@ -136,6 +136,8 @@ work:
     date_start: 2022-07-01
     date_end: 2023-09-01
     summary: |
+      **Department of Developmental Biology and Regenerative Medicine (CDBRM)**
+
       Responsibilities included:
 
       - Worked with KOMP2 genetic knockout strains for **performance validation**, **manual clean-up** and **update of training set** for MEMOs a **deep learning model** previous trained from ABM (Atlas Based Methods) that uses Fully Convolutional Neural Networks (FCNNs) as well as PyTorch and MONAI (Medical Open Network for Artificial Intelligence) libraries for **quantitative multi-organ segmentation** of mouse embryos.
@@ -163,6 +165,7 @@ work:
     date_start: 2022-02-01
     date_end: 2022-07-01
     summary: |
+      **Department of Developmental Biology and Regenerative Medicine (CDBRM)**
 
       Responsibilities included:
 
@@ -175,7 +178,7 @@ work:
       - SlicerMorph
       - Genomic Analysis
       - Epigenetics
-      - Literature review 
+      - Literature Review 
       - Statistical Shape Models (SSMs)
 
     button:

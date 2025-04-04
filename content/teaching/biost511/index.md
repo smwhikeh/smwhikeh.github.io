@@ -1,6 +1,6 @@
 ---
 title: BIOST 511 Medical Biometry I 
-summary: Final Project from BIOST 511
+summary: Statistical Data Analysis Plan and Report
 date: 2023-10-24
 type: docs
 math: false
@@ -10,39 +10,89 @@ image:
   caption: 'Embed rich media such as videos and LaTeX math'
 
 ---
+## Overview
 
-## BIOST 511: Medical Biometry I
+This class covered the presentation of the principles and methods of **data description** and elementary **parametric** and **nonparametric** statistical analysis. 
 
-This class covered the presentation of the principels and methods of data description and elemtnary parametric and nonparametric statisitcal analysis. 
-
-Examples were drawn from biomedical literatuer and real data sets were analyzed after a brief introduction to the use of standard statistical computer packages in `RStudio`. 
+Examples were drawn from biomedical literature and real data sets were analyzed after a brief introduction to the use of standard statistical computer packages in `RStudio`. 
 
 Statistical Techniques covered included description of samples, comparison of two sample means and proportions, simple linear regression and correlation.
 
-### Final Project Data Analysis Plan (Part 1)
+---
 
-- Co-authored with Tessa Fujisaki MPHc, Thania Solar M.D., MPHc, and Sian Siam MPHc.
+## Cardiovascular Health Study: Statistical Data Analysis Plan (Part 1)
 
-This was a creation of a statistical analysis plan. We wrote a statistical hypothesis and proposed analysis that included descriptive analysis comprising of basic data descirption, evaluation/comparison of subgroups, identification of outliers and patterns and checked for assumptions of normality for interfential analysis (ex - normality, linearity, mean/variance relationships)
+### Exploring the Associations between HDL Cholesterol, Family History of Heart Attack, and Coronary Heart Disease in Adults Aged 65+ 
+
+Collaborators: Tessa Fujisaki MPH, Thania Solar M.D., MPH, and Sian Siam MPH.
+
+This project investigated how high-density lipoprotein (HDL) cholesterol levels and family history of heart attack and modifiers related to the incidence of coronary heart disease (CHD) in older adults leveraging data from the Cardiovascular Health Study (CHS) dataset `chd3200.csv`, a large-scale longitudinal study focused on adults aged 65 and above.
+
+Our team developed a detailed **statistical and inferential analysis plan** to examine key risk factors for CHD in an aging population. Using 6 years of follow up data, we explored whether family history of heart attack acts as an effect modifier in the relationship between HDL and CHD. 
+
+**Key Objectives:** 
+
+- Determine which variables there is a **statistically significant association** with CHD but in particular, between HDL cholesterol levels and the incident of CHD. 
+- Assess whether family history of heart attack modifies this association 
+- Explore other variables such as age, smoking status, alcohol use and insulin levels for potential associations with CHD. 
+
+**Proposed Methodology:**
+
+- **Descriptive analysis** summarized distributions of continuous and categorical variables
+- **Bivariate analysis** examined relationships between CHD and individual predictors using cross-tabulations and summary statistics 
+- **Inferential analysis** included proposal of t-test and chi-square test to asses the associations and interaction effects with a significance threshold of a = 0.05. 
+- Addressed **data cleaning** strategies including handling missing values, detecting outliers and identifying potential confounders and effect modifiers (ex - smoking status and age).
 
 ---
 
+## Cardiovascular Health Study: Statistical Data Report (Part 2)
+
+**Statistical data analysis** was conducted in **Rstudio (v2023.06.2+561)** using packages such as `dyplr`, `ggplot2`, `e1071`, `flextable`, `gtsummary` and `tidyr`.
+
+**Data Analysis**
+
+- **Descriptive Statistics**
+    - **Summary table** for continous variables (ex - age, HDL, insulin, alcohol) and categorical variables (CHD, FHHA, smoking status) was generated to examine distributions, skewness and central tendencies
+- **Data Visualization**
+    - Creation of **histograms** and **boxplot** to explore continuous variable distribution and bar chart to visualize categorical data and bivariate relationships
+- **Bivariate Analysis**
+    - **T-test** and **chi-square test** performed to compare HDL levels, age, alcohol intake, insulin, smoking and FFHHA by CHD status 
+    - Individuals **stratified** by HDL levels (<40 mg/dL vs >40 mg/dL) and FHHA to assess if FHHA modifies HDL-CHD relationship 
+- **Effect Modification Testing**
+    - We examined the **stratified frequency** of CHD across HDL levels, separately for those with and without FHHA 
+        - Difference in frequencies suggested effect modification 
+
+**Results** 
+
+- **Descriptive Findings** 
+    - **Mean HDL** was lower in individuals with CHD (51mg/dL)
+    - Serum insulin and alcohol consumption was higher among individuals with CHD 
+    - 13.5% of participants had CHD, 30.8% reported FHHA and 11.8% were current smokers 
+- **Inferential Findings**
+    - Two sample **t-test** showed statistically significant difference in HDL levels between those with and without CHD (p < 0.001>)
+    - FHHA **modified the relationship** between HDL and cHD 
+        - Among those with HDL <40mg/dL, 25% of individuals with FHHA had CHD compared to 17% without FHHA 
+        - Among those with HDL >40mg/dL, 15% of individuals with FHHA had CHD compared to 11% without FHHA.
+
+![CHD Box Plot](box.png)
+
+
+![CHD   Bar Plot](bar.png)
+
+
+
+**Conclusion**
+
+This project found that **lower HDL cholesterol** levels are **significantly associated** with **increased CHD risk** in older adults and that **family history of heart attack** modifies this relationship. Therefore this shows the importance of early lipid screening, family history assessment and lifestyle interventions to prevent CHD in aging populations. 
+
+[Download Full Project Report (PDF)](dap.pdf)
 
 
 
 
-## BIOST 512: Medical Biometry II
-
-## BIOST 546: Machine Learning
 
 
-
-
-
-
-
-
-[Hugo Blox Builder](https://hugoblox.com) is designed to give technical content creators a seamless experience. You can focus on the content and the Hugo Blox Builder which this template is built upon handles the rest.
+<!-- [Hugo Blox Builder](https://hugoblox.com) is designed to give technical content creators a seamless experience. You can focus on the content and the Hugo Blox Builder which this template is built upon handles the rest.
 
 **Embed videos, podcasts, code, LaTeX math, and even test students!**
 
@@ -170,3 +220,5 @@ renders as
 {{< icon name="python" >}} Python
 
 ## Did you find this page helpful? Consider sharing it 🙌
+-->
+
