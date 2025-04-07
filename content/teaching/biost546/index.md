@@ -1,6 +1,6 @@
 ---
 title: BIOST 546 Machine Learning for Biomedical and Public Health Big Data
-summary: s
+summary: Machine Learning
 date: 2023-10-24
 type: docs
 math: false

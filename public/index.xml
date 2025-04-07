@@ -605,7 +605,7 @@ renders as
 
 
 
-&lt;div id=&#34;chart-437129685&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-461387529&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -623,7 +623,7 @@ renders as
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-437129685&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-461387529&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -1309,14 +1309,6 @@ For each model, computed the &lt;strong&gt;training mean squared error (MSE)&lt;
 &lt;h1 id=&#34;title-languages&#34;&gt;title: Languages&lt;/h1&gt;
 &lt;h1 id=&#34;username-admin-1&#34;&gt;username: admin&lt;/h1&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>HMS 520</title>
-      <link>http://localhost:1313/teaching/phi/</link>
-      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/phi/</guid>
-      <description></description>
     </item>
     
     <item>
