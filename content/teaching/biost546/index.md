@@ -138,7 +138,7 @@ For each model, computed the **training mean squared error (MSE)** and analyze h
 
 This assignment provided **insights** into medical cost data production using **regression modeling** and highlighted the balance between **model complexity** and **predictive accuracy** through **bias-variance trade-off**. 
 
-[Download Full Assignment Report (PDF)](hw1.pdf)
+[Download Full Assignment Report (PDF)](whikehart_hw1.pdf)
 
 [GitHub Code Repository](https://github.com/smwhikeh/biost_546)
 
