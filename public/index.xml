@@ -605,7 +605,7 @@ renders as
 
 
 
-&lt;div id=&#34;chart-196537482&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-873562941&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -623,7 +623,7 @@ renders as
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-196537482&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-873562941&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -1017,7 +1017,7 @@ data.head()
 &lt;p&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;This project confirms that &lt;strong&gt;income group&lt;/strong&gt; is a &lt;strong&gt;significant determinant&lt;/strong&gt; of &lt;strong&gt;life expectancy in 2019&lt;/strong&gt;. Adjusting for health expenditure did not change the results and including 2001 life expectancy revealed its role as a critical factor influencing life expectancy trends. Further research could expand on this analysis with longitudinal studies, qualitative inquiries, cross-country comparisons and exploration of policy implications.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;dap2.pdf&#34;&gt;Download Full Project Report (PDF)&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/smwhikeh/biost_512_dap&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Code Repository&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/smwhikeh/biost_512&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Code Repository&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

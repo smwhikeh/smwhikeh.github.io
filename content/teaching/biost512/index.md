@@ -49,4 +49,4 @@ This project confirms that **income group** is a **significant determinant** of 
 
 [Download Full Project Report (PDF)](dap2.pdf)
 
-[GitHub Code Repository](https://github.com/smwhikeh/biost512)
+[GitHub Code Repository](https://github.com/smwhikeh/biost_512)
