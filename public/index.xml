@@ -458,18 +458,42 @@ For each model, computed the &lt;strong&gt;training mean squared error (MSE)&lt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Findings and Interpretation&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Our analysis examined TB mortality trends from 2015 to 2020 across regions, age groups and risk factors.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Regional and Age-Specific Mortality Trends&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;We found that TB mortality has &lt;strong&gt;declined&lt;/strong&gt; globally between 2015 and 2020 with varying degrees of success by &lt;strong&gt;region&lt;/strong&gt;. Some regions exceeded the end TB targets while others lagged behind&lt;/p&gt;
+&lt;p&gt;TB mortality changes &lt;strong&gt;varied widely by region&lt;/strong&gt;, Eastern Europe, Central Europe and Central Asia had the &lt;strong&gt;greatest reductions&lt;/strong&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Older age groups&lt;/strong&gt; (50-69 and 70+) had higher rates of TB mortality, both in general and due to risk factors&lt;/p&gt;
+&lt;p&gt;In contrast, High-income North America, Oceania and Central Latin America experiences &lt;strong&gt;increases&lt;/strong&gt; which point to potential &lt;strong&gt;systemic&lt;/strong&gt; or &lt;strong&gt;healthcare challenges&lt;/strong&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Smoking&lt;/strong&gt; was the leading attributable risk factor for TB mortality across most age group and regions, followed by alcohol and diabetes&lt;/p&gt;
+&lt;p&gt;Across regions, adults (ages 50-69 and 70+)
+consistently showed the &lt;strong&gt;highest increases&lt;/strong&gt; in mortality which emphasize the need for &lt;strong&gt;targeted interventions for aging population&lt;/strong&gt;s.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Risk Factor Contributions&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Risk patterns shifted with age: ages &lt;strong&gt;15-49 Diabetes&lt;/strong&gt; was the leading contributor and ages &lt;strong&gt;50-69 and 70+ alcohol use&lt;/strong&gt; became dominant, with smoking also significant among older adults.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Regions with &lt;strong&gt;higher reductions&lt;/strong&gt; in TB mortality often had &lt;strong&gt;lower attributable mortality&lt;/strong&gt; from modifiable risks, suggesting successful implementation of broader public health interventions.&lt;/p&gt;
+&lt;p&gt;Regionally, Sub-Saharan Africa and South Asia had the &lt;strong&gt;highest risk-attributable mortality&lt;/strong&gt; which likely reflect &lt;strong&gt;disparities&lt;/strong&gt; in healthcare access and chronic disease management.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;These findings highlight the need for &lt;strong&gt;age-specific&lt;/strong&gt; and &lt;strong&gt;region-specific&lt;/strong&gt; prevention strategies.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Link Between Mortality Reduction and Risk Factors&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A linear regression analysis showed &lt;strong&gt;no significant relationship&lt;/strong&gt; between mortality reduction and average risk factor contribution.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;This suggests that mortality improvements may be driven by more &lt;strong&gt;broader healthcare advancements&lt;/strong&gt; than by reductions in individual risk factors.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Future efforts should consider &lt;strong&gt;additional determinants&lt;/strong&gt; of TB mortality to guide policy and intervention priorities.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/p&gt;
@@ -1162,7 +1186,7 @@ renders as
 
 
 
-&lt;div id=&#34;chart-562387491&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-513492876&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -1180,7 +1204,7 @@ renders as
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-562387491&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-513492876&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();

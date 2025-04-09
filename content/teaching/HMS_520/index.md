@@ -64,13 +64,33 @@ Our analysis included:
 
 **Findings and Interpretation**
 
-- We found that TB mortality has **declined** globally between 2015 and 2020 with varying degrees of success by **region**. Some regions exceeded the end TB targets while others lagged behind 
+Our analysis examined TB mortality trends from 2015 to 2020 across regions, age groups and risk factors.
 
-- **Older age groups** (50-69 and 70+) had higher rates of TB mortality, both in general and due to risk factors 
+**Regional and Age-Specific Mortality Trends**
 
-- **Smoking** was the leading attributable risk factor for TB mortality across most age group and regions, followed by alcohol and diabetes 
+- TB mortality changes **varied widely by region**, Eastern Europe, Central Europe and Central Asia had the **greatest reductions**. 
 
-- Regions with **higher reductions** in TB mortality often had **lower attributable mortality** from modifiable risks, suggesting successful implementation of broader public health interventions. 
+- In contrast, High-income North America, Oceania and Central Latin America experiences **increases** which point to potential **systemic** or **healthcare challenges**.
+
+- Across regions, adults (ages 50-69 and 70+) 
+consistently showed the **highest increases** in mortality which emphasize the need for **targeted interventions for aging population**s.
+
+**Risk Factor Contributions**
+
+- Risk patterns shifted with age: ages **15-49 Diabetes** was the leading contributor and ages **50-69 and 70+ alcohol use** became dominant, with smoking also significant among older adults. 
+
+- Regionally, Sub-Saharan Africa and South Asia had the **highest risk-attributable mortality** which likely reflect **disparities** in healthcare access and chronic disease management. 
+
+- These findings highlight the need for **age-specific** and **region-specific** prevention strategies.
+
+**Link Between Mortality Reduction and Risk Factors**
+
+- A linear regression analysis showed **no significant relationship** between mortality reduction and average risk factor contribution. 
+
+- This suggests that mortality improvements may be driven by more **broader healthcare advancements** than by reductions in individual risk factors.
+
+- Future efforts should consider **additional determinants** of TB mortality to guide policy and intervention priorities. 
+
 
 **Conclusion**
 
