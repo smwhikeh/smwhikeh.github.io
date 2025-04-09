@@ -5,12 +5,123 @@
     <link>http://localhost:1313/tags/biostatistics/</link>
       <atom:link href="http://localhost:1313/tags/biostatistics/index.xml" rel="self" type="application/rss+xml" />
     <description>Biostatistics</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 14 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 07 Mar 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://localhost:1313/media/icon_hu_65e1e165efa47c71.png</url>
       <title>Biostatistics</title>
       <link>http://localhost:1313/tags/biostatistics/</link>
     </image>
+    
+    <item>
+      <title>BIOST 512 Medical Biometry II</title>
+      <link>http://localhost:1313/teaching/biost512/</link>
+      <pubDate>Thu, 07 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/teaching/biost512/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;This class covered &lt;strong&gt;multiple linear regression&lt;/strong&gt;, &lt;strong&gt;analysis of covariance (ANCOVA)&lt;/strong&gt; and &lt;strong&gt;one-way and two-way analysis of variance (ANOVA)&lt;/strong&gt;. Discussion was done on &lt;strong&gt;model assumptions&lt;/strong&gt;, &lt;strong&gt;interpretation&lt;/strong&gt;, &lt;strong&gt;transformations&lt;/strong&gt;, &lt;strong&gt;outlier detection&lt;/strong&gt;, &lt;strong&gt;dummy variables&lt;/strong&gt; and &lt;strong&gt;variable selection&lt;/strong&gt; procedures. Examples were drawn from biomedical literature and &lt;strong&gt;R&lt;/strong&gt; was utilized for statistical analysis.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;data-analysis-plan-for-life-expectancy&#34;&gt;Data Analysis Plan for Life Expectancy&lt;/h2&gt;
+&lt;p&gt;Collaborators: Prity Lata Chakraborty MS, MPHc and Gaetan Khim M.D, MPHc.&lt;/p&gt;
+&lt;p&gt;This project utilized data from &lt;a href=&#34;https://data.worldbank.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;World Bank Open Data&lt;/a&gt; &amp;amp; &lt;a href=&#34;https://ourworldindata.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Our World in Data&lt;/a&gt;.  For this data analysis project, a subset of the data was used to focus on information available in years 2001 and 2019 and for a subset of variables from the &lt;a href=&#34;https://www.kaggle.com/datasets/mjshri23/life-expectancy-and-socio-economic-world-bank&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kaggle website&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Using the data &lt;code&gt;BIOST512-subset-LifeExpectancy.csv&lt;/code&gt;, importing, cleaning, creation of factor variables and analysis was done using &lt;strong&gt;Rstudio&lt;/strong&gt; and the packages, &lt;code&gt;psych&lt;/code&gt;, &lt;code&gt;rigr&lt;/code&gt;, &lt;code&gt;lattice&lt;/code&gt;, &lt;code&gt;tidyverse&lt;/code&gt;,&lt;code&gt;kableExtra&lt;/code&gt;, &lt;code&gt;ggplot2&lt;/code&gt;, &lt;code&gt;ggthemes&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key objectives&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This project investigated the &lt;strong&gt;relationship&lt;/strong&gt; between &lt;strong&gt;income, health expenditure and life expectancy&lt;/strong&gt; and how these factors &lt;strong&gt;influenced life expectancy in 2019&lt;/strong&gt; with a focus on the role of a country&amp;rsquo;s income and 2001 life expectancy.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Methods&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;To understand the &lt;strong&gt;key trends&lt;/strong&gt; and &lt;strong&gt;relationships&lt;/strong&gt;, we started with a &lt;strong&gt;descriptive analysis&lt;/strong&gt; by creating a mock table to track the proportion and occurrences for each factor based on income classification per region. This also included a review of &lt;strong&gt;missing data&lt;/strong&gt; to identify &lt;strong&gt;potential limitations&lt;/strong&gt;. A &lt;strong&gt;box plot&lt;/strong&gt; provided a visual overview of life expectancy distributions in 2001 and 2019, broken down by income group.&lt;/p&gt;
+&lt;p&gt;To test &lt;strong&gt;associations&lt;/strong&gt; between &lt;strong&gt;income group&lt;/strong&gt; and &lt;strong&gt;life expectancy&lt;/strong&gt; we used a &lt;strong&gt;one-way analysis of variance (ANOVA)&lt;/strong&gt; test. We also used &lt;strong&gt;analysis of covariance (ANCOVA)&lt;/strong&gt; to model the effects of income group, health expenditure and life expectancy in 2001 on life expectancy in 2019. Several &lt;strong&gt;hypotheses&lt;/strong&gt; were tested to evaluate interactions such as the effect of health expenditure on life expectancy and whether 2001 life expectancy acted as an effect modifier in 2019.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Results&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In this project we found that the &lt;strong&gt;median life expectancy&lt;/strong&gt; for 2019 was &lt;strong&gt;82 years&lt;/strong&gt; for &lt;strong&gt;high income&lt;/strong&gt; countries, &lt;strong&gt;63 years&lt;/strong&gt; for &lt;strong&gt;middle income countries&lt;/strong&gt; and &lt;strong&gt;73 years&lt;/strong&gt; for &lt;strong&gt;low income countries&lt;/strong&gt;. Despite some missing data (n=10) the statistical analysis indicated a &lt;strong&gt;significant association&lt;/strong&gt; between &lt;strong&gt;income group&lt;/strong&gt; and &lt;strong&gt;life expectancy&lt;/strong&gt; (p &amp;lt; 0.001). When we &lt;strong&gt;adjusted&lt;/strong&gt; for health expenditure there was &lt;strong&gt;no significant interaction&lt;/strong&gt; between health expenditure and income group, which suggests that health expenditure does not act as an &lt;strong&gt;effect modifier&lt;/strong&gt; in this context.&lt;/p&gt;
+&lt;p&gt;However, when we included 2001 life expectancy in the model, there was a &lt;strong&gt;significant interaction&lt;/strong&gt; which confirms that previous life expectancy serves as an &lt;strong&gt;important modifier&lt;/strong&gt; of life expectancy outcomes in 2019.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;table1&#34; srcset=&#34;
+               /teaching/biost512/tabl2_hu_4afbd7b346be7bd4.webp 400w,
+               /teaching/biost512/tabl2_hu_dbbcafbaaf68093d.webp 760w,
+               /teaching/biost512/tabl2_hu_1817ec74aa4f04d3.webp 1200w&#34;
+               src=&#34;http://localhost:1313/teaching/biost512/tabl2_hu_4afbd7b346be7bd4.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;313&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;tabl32&#34; srcset=&#34;
+               /teaching/biost512/tabl1_hu_df076d67942d1918.webp 400w,
+               /teaching/biost512/tabl1_hu_dbaea5d0070fbf26.webp 760w,
+               /teaching/biost512/tabl1_hu_4b7967503c99b02c.webp 1200w&#34;
+               src=&#34;http://localhost:1313/teaching/biost512/tabl1_hu_df076d67942d1918.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;121&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;bar&#34; srcset=&#34;
+               /teaching/biost512/box_hu_5cd94ae1692502d8.webp 400w,
+               /teaching/biost512/box_hu_a5edd1fe1b44e277.webp 760w,
+               /teaching/biost512/box_hu_5c66b5955f23748e.webp 1200w&#34;
+               src=&#34;http://localhost:1313/teaching/biost512/box_hu_5cd94ae1692502d8.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;406&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This project confirms that &lt;strong&gt;income group&lt;/strong&gt; is a &lt;strong&gt;significant determinant&lt;/strong&gt; of &lt;strong&gt;life expectancy in 2019&lt;/strong&gt;. Adjusting for health expenditure did not change the results and including 2001 life expectancy revealed its role as a critical factor influencing life expectancy trends. Further research could expand on this analysis with longitudinal studies, qualitative inquiries, cross-country comparisons and exploration of policy implications.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;dap2.pdf&#34;&gt;Download Full Project Report (PDF)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/smwhikeh/biost_512&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Code Repository&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>BIOST 511 Medical Biometry I</title>
@@ -327,117 +438,6 @@ renders as
 
 ## Did you find this page helpful? Consider sharing it 🙌
 --&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>BIOST 512 Medical Biometry II</title>
-      <link>http://localhost:1313/teaching/biost512/</link>
-      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/biost512/</guid>
-      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
-&lt;p&gt;This class covered &lt;strong&gt;multiple linear regression&lt;/strong&gt;, &lt;strong&gt;analysis of covariance (ANCOVA)&lt;/strong&gt; and &lt;strong&gt;one-way and two-way analysis of variance (ANOVA)&lt;/strong&gt;. Discussion was done on &lt;strong&gt;model assumptions&lt;/strong&gt;, &lt;strong&gt;interpretation&lt;/strong&gt;, &lt;strong&gt;transformations&lt;/strong&gt;, &lt;strong&gt;outlier detection&lt;/strong&gt;, &lt;strong&gt;dummy variables&lt;/strong&gt; and &lt;strong&gt;variable selection&lt;/strong&gt; procedures. Examples were drawn from biomedical literature and &lt;strong&gt;R&lt;/strong&gt; was utilized for statistical analysis.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;data-analysis-plan-for-life-expectancy&#34;&gt;Data Analysis Plan for Life Expectancy&lt;/h2&gt;
-&lt;p&gt;Collaborators:&lt;/p&gt;
-&lt;p&gt;This project utilized data from &lt;a href=&#34;https://data.worldbank.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;World Bank Open Data&lt;/a&gt; &amp;amp; &lt;a href=&#34;https://ourworldindata.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Our World in Data&lt;/a&gt;.  For this data analysis project, a subset of the data was used to focus on information available in years 2001 and 2019 and for a subset of variables from the &lt;a href=&#34;https://www.kaggle.com/datasets/mjshri23/life-expectancy-and-socio-economic-world-bank&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kaggle website&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Using the data &lt;code&gt;BIOST512-subset-LifeExpectancy.csv&lt;/code&gt;, importing, cleaning, creation of factor variables and analysis was done using &lt;strong&gt;Rstudio&lt;/strong&gt; and the packages, &lt;code&gt;psych&lt;/code&gt;, &lt;code&gt;rigr&lt;/code&gt;, &lt;code&gt;lattice&lt;/code&gt;, &lt;code&gt;tidyverse&lt;/code&gt;,&lt;code&gt;kableExtra&lt;/code&gt;, &lt;code&gt;ggplot2&lt;/code&gt;, &lt;code&gt;ggthemes&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key objectives&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;This project investigated the &lt;strong&gt;relationship&lt;/strong&gt; between &lt;strong&gt;income, health expenditure and life expectancy&lt;/strong&gt; and how these factors &lt;strong&gt;influenced life expectancy in 2019&lt;/strong&gt; with a focus on the role of a country&amp;rsquo;s income and 2001 life expectancy.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Methods&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;To understand the &lt;strong&gt;key trends&lt;/strong&gt; and &lt;strong&gt;relationships&lt;/strong&gt;, we started with a &lt;strong&gt;descriptive analysis&lt;/strong&gt; by creating a mock table to track the proportion and occurrences for each factor based on income classification per region. This also included a review of &lt;strong&gt;missing data&lt;/strong&gt; to identify &lt;strong&gt;potential limitations&lt;/strong&gt;. A &lt;strong&gt;box plot&lt;/strong&gt; provided a visual overview of life expectancy distributions in 2001 and 2019, broken down by income group.&lt;/p&gt;
-&lt;p&gt;To test &lt;strong&gt;associations&lt;/strong&gt; between &lt;strong&gt;income group&lt;/strong&gt; and &lt;strong&gt;life expectancy&lt;/strong&gt; we used a &lt;strong&gt;one-way analysis of variance (ANOVA)&lt;/strong&gt; test. We also used &lt;strong&gt;analysis of covariance (ANCOVA)&lt;/strong&gt; to model the effects of income group, health expenditure and life expectancy in 2001 on life expectancy in 2019. Several &lt;strong&gt;hypotheses&lt;/strong&gt; were tested to evaluate interactions such as the effect of health expenditure on life expectancy and whether 2001 life expectancy acted as an effect modifier in 2019.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Results&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;In this project we found that the &lt;strong&gt;median life expectancy&lt;/strong&gt; for 2019 was &lt;strong&gt;82 years&lt;/strong&gt; for &lt;strong&gt;high income&lt;/strong&gt; countries, &lt;strong&gt;63 years&lt;/strong&gt; for &lt;strong&gt;middle income countries&lt;/strong&gt; and &lt;strong&gt;73 years&lt;/strong&gt; for &lt;strong&gt;low income countries&lt;/strong&gt;. Despite some missing data (n=10) the statistical analysis indicated a &lt;strong&gt;significant association&lt;/strong&gt; between &lt;strong&gt;income group&lt;/strong&gt; and &lt;strong&gt;life expectancy&lt;/strong&gt; (p &amp;lt; 0.001). When we &lt;strong&gt;adjusted&lt;/strong&gt; for health expenditure there was &lt;strong&gt;no significant interaction&lt;/strong&gt; between health expenditure and income group, which suggests that health expenditure does not act as an &lt;strong&gt;effect modifier&lt;/strong&gt; in this context.&lt;/p&gt;
-&lt;p&gt;However, when we included 2001 life expectancy in the model, there was a &lt;strong&gt;significant interaction&lt;/strong&gt; which confirms that previous life expectancy serves as an &lt;strong&gt;important modifier&lt;/strong&gt; of life expectancy outcomes in 2019.&lt;/p&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;flex justify-center	&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;table1&#34; srcset=&#34;
-               /teaching/biost512/tabl2_hu_4afbd7b346be7bd4.webp 400w,
-               /teaching/biost512/tabl2_hu_dbbcafbaaf68093d.webp 760w,
-               /teaching/biost512/tabl2_hu_1817ec74aa4f04d3.webp 1200w&#34;
-               src=&#34;http://localhost:1313/teaching/biost512/tabl2_hu_4afbd7b346be7bd4.webp&#34;
-               width=&#34;760&#34;
-               height=&#34;313&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;flex justify-center	&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;tabl32&#34; srcset=&#34;
-               /teaching/biost512/tabl1_hu_df076d67942d1918.webp 400w,
-               /teaching/biost512/tabl1_hu_dbaea5d0070fbf26.webp 760w,
-               /teaching/biost512/tabl1_hu_4b7967503c99b02c.webp 1200w&#34;
-               src=&#34;http://localhost:1313/teaching/biost512/tabl1_hu_df076d67942d1918.webp&#34;
-               width=&#34;760&#34;
-               height=&#34;121&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;flex justify-center	&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;bar&#34; srcset=&#34;
-               /teaching/biost512/box_hu_5cd94ae1692502d8.webp 400w,
-               /teaching/biost512/box_hu_a5edd1fe1b44e277.webp 760w,
-               /teaching/biost512/box_hu_5c66b5955f23748e.webp 1200w&#34;
-               src=&#34;http://localhost:1313/teaching/biost512/box_hu_5cd94ae1692502d8.webp&#34;
-               width=&#34;760&#34;
-               height=&#34;406&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;This project confirms that &lt;strong&gt;income group&lt;/strong&gt; is a &lt;strong&gt;significant determinant&lt;/strong&gt; of &lt;strong&gt;life expectancy in 2019&lt;/strong&gt;. Adjusting for health expenditure did not change the results and including 2001 life expectancy revealed its role as a critical factor influencing life expectancy trends. Further research could expand on this analysis with longitudinal studies, qualitative inquiries, cross-country comparisons and exploration of policy implications.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;dap2.pdf&#34;&gt;Download Full Project Report (PDF)&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/smwhikeh/biost_512&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Code Repository&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

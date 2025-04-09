@@ -62,15 +62,19 @@
     <lastmod>2024-05-19T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/teaching/biost511/</loc>
-    <lastmod>2023-12-14T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/teaching/biost512/</loc>
+    <lastmod>2024-03-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>http://localhost:1313/tags/biostatistics/</loc>
-    <lastmod>2023-12-14T00:00:00+00:00</lastmod>
+    <lastmod>2024-03-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>http://localhost:1313/teaching/</loc>
+    <lastmod>2024-03-07T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/teaching/biost511/</loc>
     <lastmod>2023-12-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -131,10 +135,6 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>http://localhost:1313/post/teach-courses/</loc>
-    <lastmod>2023-10-24T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:1313/teaching/biost512/</loc>
     <lastmod>2023-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>

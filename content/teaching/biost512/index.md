@@ -1,7 +1,7 @@
 ---
 title: BIOST 512 Medical Biometry II 
 summary: Data Analysis Report for Life Expectancy
-date: 2023-10-24
+date: 2024-03-07
 type: docs
 math: false
 tags:
@@ -16,7 +16,7 @@ This class covered **multiple linear regression**, **analysis of covariance (ANC
 ---
 ## Data Analysis Plan for Life Expectancy 
 
-Collaborators: 
+Collaborators: Prity Lata Chakraborty MS, MPHc and Gaetan Khim M.D, MPHc.
 
 This project utilized data from [World Bank Open Data](https://data.worldbank.org/) & [Our World in Data](https://ourworldindata.org/).  For this data analysis project, a subset of the data was used to focus on information available in years 2001 and 2019 and for a subset of variables from the [Kaggle website](https://www.kaggle.com/datasets/mjshri23/life-expectancy-and-socio-economic-world-bank).
 

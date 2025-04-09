@@ -34,6 +34,417 @@
     </item>
     
     <item>
+      <title>BIOST 546 Machine Learning for Biomedical and Public Health Big Data</title>
+      <link>http://localhost:1313/teaching/biost546/</link>
+      <pubDate>Sun, 16 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/teaching/biost546/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;This course provided an introduction to &lt;strong&gt;statistical machine learning&lt;/strong&gt; methods for the analysis of biomedical data. It covered &lt;strong&gt;high dimensional regression&lt;/strong&gt; and &lt;strong&gt;classification methods&lt;/strong&gt;, &lt;strong&gt;variable selection techniques&lt;/strong&gt;, &lt;strong&gt;clustering&lt;/strong&gt; and &lt;strong&gt;dimension reduction&lt;/strong&gt; methods.&lt;/p&gt;
+&lt;p&gt;Through this course I was able to gain a better understanding of &lt;strong&gt;supervised&lt;/strong&gt; and &lt;strong&gt;unsupervised&lt;/strong&gt; machine learning models, characterize &lt;strong&gt;bias variance trade-off&lt;/strong&gt;, understand connections between &lt;strong&gt;machine learning approaches&lt;/strong&gt; and &lt;strong&gt;classical statistical techniques&lt;/strong&gt;, translate scientific problems in &lt;strong&gt;statistical models&lt;/strong&gt; that can be estimated using machine learning methods, select model&amp;rsquo;s &lt;strong&gt;hyper parameters&lt;/strong&gt; to &lt;strong&gt;minimize generalization error&lt;/strong&gt; (ex - out of sample error) and apply &lt;strong&gt;R&lt;/strong&gt; in variety of machine learning techniques (ex - &lt;strong&gt;lasso and ridge regression&lt;/strong&gt;, &lt;strong&gt;splines&lt;/strong&gt;, &lt;strong&gt;generalized linear models&lt;/strong&gt;, and &lt;strong&gt;neural nets&lt;/strong&gt;).&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;assignment-1&#34;&gt;Assignment #1&lt;/h2&gt;
+&lt;p&gt;This assignment analyzed &lt;strong&gt;medical costs&lt;/strong&gt; billed by health insurance and focused on the &lt;strong&gt;impact of BMI and smoking status&lt;/strong&gt; using &lt;strong&gt;regression modeling&lt;/strong&gt;. It explored the &lt;strong&gt;bias-variance trade-off&lt;/strong&gt; through &lt;strong&gt;conceptual visualizations&lt;/strong&gt; and &lt;strong&gt;numerical simulations&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;medical-cost-analysis&#34;&gt;Medical Cost Analysis&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Data Preprocessing&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Using the &lt;code&gt;Medical_Cost_2.RData&lt;/code&gt;, I loaded in the dataset and checked for missing values.&lt;/li&gt;
+&lt;li&gt;Removed missing data using &lt;code&gt;na.omit()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Exploratory Data Analysis&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Created a scatter plot of &lt;code&gt;bmi (x-axis)&lt;/code&gt; vs &lt;code&gt;charges (y-axis)&lt;/code&gt; with color coding to distinguish smokers and non-smokers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;scatter1.png&#34; alt=&#34;scatter&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Regression Modeling&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Least-Squares Linear Models&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Model 1: charges ~ bmi&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Model 2: charges ~ bmi + smoker&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Model 3: charges ~ bmi * smoker&lt;/code&gt; (interaction term included)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Reported estimated &lt;strong&gt;regression coefficients&lt;/strong&gt; and &lt;strong&gt;interpretation&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Computed &lt;strong&gt;95% CI&lt;/strong&gt; for &lt;code&gt;bmi&lt;/code&gt; coefficient and provided interpretation&lt;/li&gt;
+&lt;li&gt;Plotted &lt;strong&gt;regression lines&lt;/strong&gt; on &lt;strong&gt;scatter plot&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Calculated &lt;strong&gt;mean squared error (MSE)&lt;/strong&gt; for each model&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Predicted&lt;/strong&gt; medical costs for smokers with &lt;code&gt;bmi = 29&lt;/code&gt; and &lt;code&gt;bmi = 31.5&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Computed and predicted&lt;/strong&gt; cost differences between smokers and non-smokers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;scatter2.png&#34; alt=&#34;scatter2&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Interaction Model with New Variable&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Created &lt;code&gt;smoker_bmi30p&lt;/code&gt; a boolean variable for smokers with &lt;code&gt;bmi &amp;gt; 30&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Fit a linear model incorporating &lt;code&gt;bmi&lt;/code&gt;, &lt;code&gt;smoker&lt;/code&gt;, and &lt;code&gt;smoker_bmi30p&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Presented &lt;strong&gt;estimated coefficients&lt;/strong&gt; and assessed statistical significance&lt;/li&gt;
+&lt;li&gt;Discussed &lt;strong&gt;implications&lt;/strong&gt; of &lt;strong&gt;non-significant variables&lt;/strong&gt; and their effect on the scatter plot&lt;/li&gt;
+&lt;li&gt;Compared &lt;strong&gt;cost differences&lt;/strong&gt; using this model vs the previous approach&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;scatter3.png&#34; alt=&#34;scatter3&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;bias-variance-trade-off-analysis&#34;&gt;Bias-Variance Trade-off Analysis&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Conceptual Analysis&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Plot&lt;/strong&gt; showing squared bias, variance, irreducible error and expected prediction error as functions of model flexibility&lt;/li&gt;
+&lt;li&gt;Illustrated training and test errors across varying model complexity levels&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;bias.png&#34; alt=&#34;bias&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;test.png&#34; alt=&#34;test&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Numerical Simulations&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Explored &lt;strong&gt;bias-variance tradeoff&lt;/strong&gt; through numerical simulations. Investigated how model complexity affects bias and variance in regression.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Data Generation&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Generated &lt;code&gt;X&lt;/code&gt; using &lt;code&gt;rnorm()&lt;/code&gt; and noise $\varepsilon$
+ using &lt;code&gt;runif()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Defined true response function&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Predictor Variable (X):&lt;/strong&gt; A vector of length \( n = 30 \) generated using &lt;code&gt;rnorm()&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Noise (ε):&lt;/strong&gt; A vector of length \( n = 30 \) generated using &lt;code&gt;runif()&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Response Variable (Y):&lt;/strong&gt; Defined as:&lt;/p&gt;
+\[
+  Y = f_{true}(X) + \epsilon
+  \]&lt;p&gt;
+
+&lt;/p&gt;
+&lt;p&gt;where the true function is:&lt;/p&gt;
+\[
+  f_{true}(X) = 3 + 2X + 3X^3
+  \]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Model Fitting&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Fit the response variable \( Y \) using &lt;strong&gt;linear regression&lt;/strong&gt; with different polynomial representations:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+\[
+  f(X) = \beta_0 + \beta_1 X
+  \]&lt;/li&gt;
+&lt;li&gt;
+\[
+  f(X) = \beta_0 + \beta_1 X + \beta_2 X^2
+  \]&lt;/li&gt;
+&lt;li&gt;
+\[
+  f(X) = \beta_0 + \beta_1 X + \beta_2 X^2 + \beta_3 X^3 + \beta_4 X^4
+  \]&lt;/li&gt;
+&lt;li&gt;
+\[
+  f(X) = \beta_0 + \beta_1 X + \beta_3 X^3
+  \]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Model Evaluation&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Training Error Analysis&lt;/strong&gt;&lt;br&gt;
+For each model, computed the &lt;strong&gt;training mean squared error (MSE)&lt;/strong&gt; and analyze how model complexity impacts in-sample performance.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Test Error Analysis&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Generated &lt;strong&gt;10,000 new test observations&lt;/strong&gt; using the same data generation process.&lt;/li&gt;
+&lt;li&gt;Evaluated the fitted models on this test set by computing the &lt;strong&gt;test MSE&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Comparison of training vs. test MSE reveals insights into &lt;strong&gt;overfitting vs. underfitting&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Comparison to True Model&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Computed the &lt;strong&gt;true regression function&amp;rsquo;s MSE&lt;/strong&gt; on both training and test data.&lt;/li&gt;
+&lt;li&gt;Compared the MSEs of the fitted models against the true function to assess bias and variance.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;This assignment provided &lt;strong&gt;insights&lt;/strong&gt; into medical cost data production using &lt;strong&gt;regression modeling&lt;/strong&gt; and highlighted the balance between &lt;strong&gt;model complexity&lt;/strong&gt; and &lt;strong&gt;predictive accuracy&lt;/strong&gt; through &lt;strong&gt;bias-variance trade-off&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;whikehart_hw1.pdf&#34;&gt;Download Full Assignment Report (PDF)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/smwhikeh/biost_546&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Code Repository&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>HMS 520 Introduction to Programming, Version Control, And Data Wrangling For Health Metrics Sciences</title>
+      <link>http://localhost:1313/teaching/hms_520/</link>
+      <pubDate>Fri, 06 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/teaching/hms_520/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;This class covered the basics of programming including &lt;strong&gt;communicating with machines&lt;/strong&gt;, writing &lt;strong&gt;clean code&lt;/strong&gt; and &lt;strong&gt;collaborative programming&lt;/strong&gt;. More specifically in this class I learned &lt;em&gt;git&lt;/em&gt; and &lt;em&gt;R&lt;/em&gt; and built a &lt;strong&gt;codebase&lt;/strong&gt; to deal with a series of tasks focused on &lt;strong&gt;data manipulation&lt;/strong&gt;. In this course I used &lt;em&gt;R&lt;/em&gt; to &lt;strong&gt;manipulate data&lt;/strong&gt; and create &lt;strong&gt;simple models&lt;/strong&gt; and &lt;strong&gt;analysis&lt;/strong&gt; as well as understanding, recognizing and writing clean code for readability and extendability. Finally, I also tested, debugged and documented R functions that I wrote.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;final-project-for-hms520-data-analysis-for-gbd-2021-tuberculosis-estimates-1990-2021&#34;&gt;Final Project for HMS520 Data Analysis for (GBD 2021) Tuberculosis Estimates 1990-2021&lt;/h2&gt;
+&lt;p&gt;Collaborator: Ye Htet Naing MD, MPH&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Background&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This project explored the &lt;strong&gt;global mortality trends&lt;/strong&gt; and &lt;strong&gt;risk factor&lt;/strong&gt; contributions to &lt;strong&gt;tuberculosis (TB)&lt;/strong&gt; between 2015 and 2019 using data from the &lt;strong&gt;Institute for Health Metrics and Evaluation (IHME) Global Burden of Disease 2021 (GBD 2021)&lt;/strong&gt; study. Access to the data can be found &lt;a href=&#34;https://ghdx.healthdata.org/record/ihme-data/gbd-2021-tuberculosis-incidence-mortality-1990-2021&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;. In support of the &lt;strong&gt;World Health Organization&amp;rsquo;s&lt;/strong&gt; End TB Strategy, which targeted a &lt;strong&gt;35% reduction&lt;/strong&gt; in TB mortality and a &lt;strong&gt;20% reduction&lt;/strong&gt; in TB incidence by 2020, we examined whether these goals were achieved across different regions and age groups, and how much modifiable risk factors like &lt;strong&gt;smoking&lt;/strong&gt;, &lt;strong&gt;alcohol use&lt;/strong&gt;, and &lt;strong&gt;diabetes&lt;/strong&gt; contributed to &lt;strong&gt;TB mortality&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key Objectives&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Using GBD data we aimed to answer the following key questions:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;How have &lt;strong&gt;mortality rates&lt;/strong&gt; changed from 2015 to 2020 across different age groups and regions?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What is the &lt;strong&gt;relative contribution&lt;/strong&gt; of different &lt;strong&gt;risk factors&lt;/strong&gt; (e.g., smoking, alcohol use, and diabetes) to TB mortality in 2015 and 2020?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Do regions or age groups with &lt;strong&gt;higher reductions&lt;/strong&gt; in TB mortality also show lower contributions of risk factors?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Data and Methods&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Our analysis included:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Preprocessing and Cleaning&lt;/strong&gt;: Filtering relevant columns, checking for missing data and creating derived variables&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Trend Analysis&lt;/strong&gt;: Calculated percent change in mortality by region and age groups (2015-2020)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Risk Factor Analysis&lt;/strong&gt;: Assessed proportion of TB mortality attributable to each risk factor&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Regression Analysis&lt;/strong&gt;: Explored associations between reductions in mortality and changes in attributable risks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Key Visualizations&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 1: Mean Mortality Change from 2015 - 2020 (All Ages)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;fig1&#34; srcset=&#34;
+               /teaching/hms_520/fig1_hu_3b23de452cd3ce4f.webp 400w,
+               /teaching/hms_520/fig1_hu_53e5064d59cc0545.webp 760w,
+               /teaching/hms_520/fig1_hu_22b29c1aa5abecc9.webp 1200w&#34;
+               src=&#34;http://localhost:1313/teaching/hms_520/fig1_hu_3b23de452cd3ce4f.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;514&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 2. Attributable Mortality by Age Group&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;fig2&#34; srcset=&#34;
+               /teaching/hms_520/fig2_hu_386341b03ece85b8.webp 400w,
+               /teaching/hms_520/fig2_hu_dd59814b4541f014.webp 760w,
+               /teaching/hms_520/fig2_hu_94251a1b9ff9d6c0.webp 1200w&#34;
+               src=&#34;http://localhost:1313/teaching/hms_520/fig2_hu_386341b03ece85b8.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;508&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 3. Attributable Mortality by Region&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;fig3&#34; srcset=&#34;
+               /teaching/hms_520/fig3_hu_7089f42d46ba8e8d.webp 400w,
+               /teaching/hms_520/fig3_hu_445a76883a64bbf0.webp 760w,
+               /teaching/hms_520/fig3_hu_b883f7837a8ac8f9.webp 1200w&#34;
+               src=&#34;http://localhost:1313/teaching/hms_520/fig3_hu_7089f42d46ba8e8d.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;514&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 4. Linear Regression: Mortality Reduction vs Risk Factor Contribution&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;fig4&#34; srcset=&#34;
+               /teaching/hms_520/fig4_hu_ac2936f7a2489a76.webp 400w,
+               /teaching/hms_520/fig4_hu_a958df59df345ec7.webp 760w,
+               /teaching/hms_520/fig4_hu_d754ce71856b1cf7.webp 1200w&#34;
+               src=&#34;http://localhost:1313/teaching/hms_520/fig4_hu_ac2936f7a2489a76.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;514&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Findings and Interpretation&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;We found that TB mortality has &lt;strong&gt;declined&lt;/strong&gt; globally between 2015 and 2020 with varying degrees of success by &lt;strong&gt;region&lt;/strong&gt;. Some regions exceeded the end TB targets while others lagged behind&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Older age groups&lt;/strong&gt; (50-69 and 70+) had higher rates of TB mortality, both in general and due to risk factors&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Smoking&lt;/strong&gt; was the leading attributable risk factor for TB mortality across most age group and regions, followed by alcohol and diabetes&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Regions with &lt;strong&gt;higher reductions&lt;/strong&gt; in TB mortality often had &lt;strong&gt;lower attributable mortality&lt;/strong&gt; from modifiable risks, suggesting successful implementation of broader public health interventions.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Our analysis shows the importance of &lt;strong&gt;age and region specific TB strategies&lt;/strong&gt; and highlights the ongoing role of &lt;strong&gt;modifiable risk factors in driving TB mortality&lt;/strong&gt;. These insights can inform &lt;strong&gt;tailored public health interventions&lt;/strong&gt; and help guide progress towards &lt;strong&gt;TB elimination&lt;/strong&gt; goals worldwide.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;hms_520_tb_final.pdf&#34;&gt;Download Project Report (PDF)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/smwhikeh/HMS_520_Final_Project_TB&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Code Repository&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Morphological Simulation Tests the Limits on Phenotype Discovery in 3D Image Analysis</title>
       <link>http://localhost:1313/publication/preprint/</link>
       <pubDate>Tue, 02 Jul 2024 00:00:00 +0000</pubDate>
@@ -48,6 +459,117 @@
       <pubDate>Sun, 19 May 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>BIOST 512 Medical Biometry II</title>
+      <link>http://localhost:1313/teaching/biost512/</link>
+      <pubDate>Thu, 07 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/teaching/biost512/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;This class covered &lt;strong&gt;multiple linear regression&lt;/strong&gt;, &lt;strong&gt;analysis of covariance (ANCOVA)&lt;/strong&gt; and &lt;strong&gt;one-way and two-way analysis of variance (ANOVA)&lt;/strong&gt;. Discussion was done on &lt;strong&gt;model assumptions&lt;/strong&gt;, &lt;strong&gt;interpretation&lt;/strong&gt;, &lt;strong&gt;transformations&lt;/strong&gt;, &lt;strong&gt;outlier detection&lt;/strong&gt;, &lt;strong&gt;dummy variables&lt;/strong&gt; and &lt;strong&gt;variable selection&lt;/strong&gt; procedures. Examples were drawn from biomedical literature and &lt;strong&gt;R&lt;/strong&gt; was utilized for statistical analysis.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;data-analysis-plan-for-life-expectancy&#34;&gt;Data Analysis Plan for Life Expectancy&lt;/h2&gt;
+&lt;p&gt;Collaborators: Prity Lata Chakraborty MS, MPHc and Gaetan Khim M.D, MPHc.&lt;/p&gt;
+&lt;p&gt;This project utilized data from &lt;a href=&#34;https://data.worldbank.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;World Bank Open Data&lt;/a&gt; &amp;amp; &lt;a href=&#34;https://ourworldindata.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Our World in Data&lt;/a&gt;.  For this data analysis project, a subset of the data was used to focus on information available in years 2001 and 2019 and for a subset of variables from the &lt;a href=&#34;https://www.kaggle.com/datasets/mjshri23/life-expectancy-and-socio-economic-world-bank&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kaggle website&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Using the data &lt;code&gt;BIOST512-subset-LifeExpectancy.csv&lt;/code&gt;, importing, cleaning, creation of factor variables and analysis was done using &lt;strong&gt;Rstudio&lt;/strong&gt; and the packages, &lt;code&gt;psych&lt;/code&gt;, &lt;code&gt;rigr&lt;/code&gt;, &lt;code&gt;lattice&lt;/code&gt;, &lt;code&gt;tidyverse&lt;/code&gt;,&lt;code&gt;kableExtra&lt;/code&gt;, &lt;code&gt;ggplot2&lt;/code&gt;, &lt;code&gt;ggthemes&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key objectives&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This project investigated the &lt;strong&gt;relationship&lt;/strong&gt; between &lt;strong&gt;income, health expenditure and life expectancy&lt;/strong&gt; and how these factors &lt;strong&gt;influenced life expectancy in 2019&lt;/strong&gt; with a focus on the role of a country&amp;rsquo;s income and 2001 life expectancy.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Methods&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;To understand the &lt;strong&gt;key trends&lt;/strong&gt; and &lt;strong&gt;relationships&lt;/strong&gt;, we started with a &lt;strong&gt;descriptive analysis&lt;/strong&gt; by creating a mock table to track the proportion and occurrences for each factor based on income classification per region. This also included a review of &lt;strong&gt;missing data&lt;/strong&gt; to identify &lt;strong&gt;potential limitations&lt;/strong&gt;. A &lt;strong&gt;box plot&lt;/strong&gt; provided a visual overview of life expectancy distributions in 2001 and 2019, broken down by income group.&lt;/p&gt;
+&lt;p&gt;To test &lt;strong&gt;associations&lt;/strong&gt; between &lt;strong&gt;income group&lt;/strong&gt; and &lt;strong&gt;life expectancy&lt;/strong&gt; we used a &lt;strong&gt;one-way analysis of variance (ANOVA)&lt;/strong&gt; test. We also used &lt;strong&gt;analysis of covariance (ANCOVA)&lt;/strong&gt; to model the effects of income group, health expenditure and life expectancy in 2001 on life expectancy in 2019. Several &lt;strong&gt;hypotheses&lt;/strong&gt; were tested to evaluate interactions such as the effect of health expenditure on life expectancy and whether 2001 life expectancy acted as an effect modifier in 2019.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Results&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In this project we found that the &lt;strong&gt;median life expectancy&lt;/strong&gt; for 2019 was &lt;strong&gt;82 years&lt;/strong&gt; for &lt;strong&gt;high income&lt;/strong&gt; countries, &lt;strong&gt;63 years&lt;/strong&gt; for &lt;strong&gt;middle income countries&lt;/strong&gt; and &lt;strong&gt;73 years&lt;/strong&gt; for &lt;strong&gt;low income countries&lt;/strong&gt;. Despite some missing data (n=10) the statistical analysis indicated a &lt;strong&gt;significant association&lt;/strong&gt; between &lt;strong&gt;income group&lt;/strong&gt; and &lt;strong&gt;life expectancy&lt;/strong&gt; (p &amp;lt; 0.001). When we &lt;strong&gt;adjusted&lt;/strong&gt; for health expenditure there was &lt;strong&gt;no significant interaction&lt;/strong&gt; between health expenditure and income group, which suggests that health expenditure does not act as an &lt;strong&gt;effect modifier&lt;/strong&gt; in this context.&lt;/p&gt;
+&lt;p&gt;However, when we included 2001 life expectancy in the model, there was a &lt;strong&gt;significant interaction&lt;/strong&gt; which confirms that previous life expectancy serves as an &lt;strong&gt;important modifier&lt;/strong&gt; of life expectancy outcomes in 2019.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;table1&#34; srcset=&#34;
+               /teaching/biost512/tabl2_hu_4afbd7b346be7bd4.webp 400w,
+               /teaching/biost512/tabl2_hu_dbbcafbaaf68093d.webp 760w,
+               /teaching/biost512/tabl2_hu_1817ec74aa4f04d3.webp 1200w&#34;
+               src=&#34;http://localhost:1313/teaching/biost512/tabl2_hu_4afbd7b346be7bd4.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;313&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;tabl32&#34; srcset=&#34;
+               /teaching/biost512/tabl1_hu_df076d67942d1918.webp 400w,
+               /teaching/biost512/tabl1_hu_dbaea5d0070fbf26.webp 760w,
+               /teaching/biost512/tabl1_hu_4b7967503c99b02c.webp 1200w&#34;
+               src=&#34;http://localhost:1313/teaching/biost512/tabl1_hu_df076d67942d1918.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;121&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;bar&#34; srcset=&#34;
+               /teaching/biost512/box_hu_5cd94ae1692502d8.webp 400w,
+               /teaching/biost512/box_hu_a5edd1fe1b44e277.webp 760w,
+               /teaching/biost512/box_hu_5c66b5955f23748e.webp 1200w&#34;
+               src=&#34;http://localhost:1313/teaching/biost512/box_hu_5cd94ae1692502d8.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;406&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This project confirms that &lt;strong&gt;income group&lt;/strong&gt; is a &lt;strong&gt;significant determinant&lt;/strong&gt; of &lt;strong&gt;life expectancy in 2019&lt;/strong&gt;. Adjusting for health expenditure did not change the results and including 2001 life expectancy revealed its role as a critical factor influencing life expectancy trends. Further research could expand on this analysis with longitudinal studies, qualitative inquiries, cross-country comparisons and exploration of policy implications.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;dap2.pdf&#34;&gt;Download Full Project Report (PDF)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/smwhikeh/biost_512&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Code Repository&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -605,7 +1127,7 @@ renders as
 
 
 
-&lt;div id=&#34;chart-197528346&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-185296734&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -623,7 +1145,7 @@ renders as
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-197528346&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-185296734&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -907,391 +1429,6 @@ data.head()
     &lt;svg style=&#34;height: 1em; transform: translateY(0.1em);&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; height=&#34;1em&#34; viewBox=&#34;0 0 448 512&#34; fill=&#34;currentColor&#34;&gt;&lt;path d=&#34;M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4.1-11.3 9.1-20.3 20.1-20.3zM167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4zm-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3.1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3z&#34;/&gt;&lt;/svg&gt;
   &lt;/span&gt; Python&lt;/p&gt;
 &lt;h2 id=&#34;did-you-find-this-page-helpful-consider-sharing-it-&#34;&gt;Did you find this page helpful? Consider sharing it 🙌&lt;/h2&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>BIOST 512 Medical Biometry II</title>
-      <link>http://localhost:1313/teaching/biost512/</link>
-      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/biost512/</guid>
-      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
-&lt;p&gt;This class covered &lt;strong&gt;multiple linear regression&lt;/strong&gt;, &lt;strong&gt;analysis of covariance (ANCOVA)&lt;/strong&gt; and &lt;strong&gt;one-way and two-way analysis of variance (ANOVA)&lt;/strong&gt;. Discussion was done on &lt;strong&gt;model assumptions&lt;/strong&gt;, &lt;strong&gt;interpretation&lt;/strong&gt;, &lt;strong&gt;transformations&lt;/strong&gt;, &lt;strong&gt;outlier detection&lt;/strong&gt;, &lt;strong&gt;dummy variables&lt;/strong&gt; and &lt;strong&gt;variable selection&lt;/strong&gt; procedures. Examples were drawn from biomedical literature and &lt;strong&gt;R&lt;/strong&gt; was utilized for statistical analysis.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;data-analysis-plan-for-life-expectancy&#34;&gt;Data Analysis Plan for Life Expectancy&lt;/h2&gt;
-&lt;p&gt;Collaborators:&lt;/p&gt;
-&lt;p&gt;This project utilized data from &lt;a href=&#34;https://data.worldbank.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;World Bank Open Data&lt;/a&gt; &amp;amp; &lt;a href=&#34;https://ourworldindata.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Our World in Data&lt;/a&gt;.  For this data analysis project, a subset of the data was used to focus on information available in years 2001 and 2019 and for a subset of variables from the &lt;a href=&#34;https://www.kaggle.com/datasets/mjshri23/life-expectancy-and-socio-economic-world-bank&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kaggle website&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Using the data &lt;code&gt;BIOST512-subset-LifeExpectancy.csv&lt;/code&gt;, importing, cleaning, creation of factor variables and analysis was done using &lt;strong&gt;Rstudio&lt;/strong&gt; and the packages, &lt;code&gt;psych&lt;/code&gt;, &lt;code&gt;rigr&lt;/code&gt;, &lt;code&gt;lattice&lt;/code&gt;, &lt;code&gt;tidyverse&lt;/code&gt;,&lt;code&gt;kableExtra&lt;/code&gt;, &lt;code&gt;ggplot2&lt;/code&gt;, &lt;code&gt;ggthemes&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key objectives&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;This project investigated the &lt;strong&gt;relationship&lt;/strong&gt; between &lt;strong&gt;income, health expenditure and life expectancy&lt;/strong&gt; and how these factors &lt;strong&gt;influenced life expectancy in 2019&lt;/strong&gt; with a focus on the role of a country&amp;rsquo;s income and 2001 life expectancy.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Methods&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;To understand the &lt;strong&gt;key trends&lt;/strong&gt; and &lt;strong&gt;relationships&lt;/strong&gt;, we started with a &lt;strong&gt;descriptive analysis&lt;/strong&gt; by creating a mock table to track the proportion and occurrences for each factor based on income classification per region. This also included a review of &lt;strong&gt;missing data&lt;/strong&gt; to identify &lt;strong&gt;potential limitations&lt;/strong&gt;. A &lt;strong&gt;box plot&lt;/strong&gt; provided a visual overview of life expectancy distributions in 2001 and 2019, broken down by income group.&lt;/p&gt;
-&lt;p&gt;To test &lt;strong&gt;associations&lt;/strong&gt; between &lt;strong&gt;income group&lt;/strong&gt; and &lt;strong&gt;life expectancy&lt;/strong&gt; we used a &lt;strong&gt;one-way analysis of variance (ANOVA)&lt;/strong&gt; test. We also used &lt;strong&gt;analysis of covariance (ANCOVA)&lt;/strong&gt; to model the effects of income group, health expenditure and life expectancy in 2001 on life expectancy in 2019. Several &lt;strong&gt;hypotheses&lt;/strong&gt; were tested to evaluate interactions such as the effect of health expenditure on life expectancy and whether 2001 life expectancy acted as an effect modifier in 2019.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Results&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;In this project we found that the &lt;strong&gt;median life expectancy&lt;/strong&gt; for 2019 was &lt;strong&gt;82 years&lt;/strong&gt; for &lt;strong&gt;high income&lt;/strong&gt; countries, &lt;strong&gt;63 years&lt;/strong&gt; for &lt;strong&gt;middle income countries&lt;/strong&gt; and &lt;strong&gt;73 years&lt;/strong&gt; for &lt;strong&gt;low income countries&lt;/strong&gt;. Despite some missing data (n=10) the statistical analysis indicated a &lt;strong&gt;significant association&lt;/strong&gt; between &lt;strong&gt;income group&lt;/strong&gt; and &lt;strong&gt;life expectancy&lt;/strong&gt; (p &amp;lt; 0.001). When we &lt;strong&gt;adjusted&lt;/strong&gt; for health expenditure there was &lt;strong&gt;no significant interaction&lt;/strong&gt; between health expenditure and income group, which suggests that health expenditure does not act as an &lt;strong&gt;effect modifier&lt;/strong&gt; in this context.&lt;/p&gt;
-&lt;p&gt;However, when we included 2001 life expectancy in the model, there was a &lt;strong&gt;significant interaction&lt;/strong&gt; which confirms that previous life expectancy serves as an &lt;strong&gt;important modifier&lt;/strong&gt; of life expectancy outcomes in 2019.&lt;/p&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;flex justify-center	&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;table1&#34; srcset=&#34;
-               /teaching/biost512/tabl2_hu_4afbd7b346be7bd4.webp 400w,
-               /teaching/biost512/tabl2_hu_dbbcafbaaf68093d.webp 760w,
-               /teaching/biost512/tabl2_hu_1817ec74aa4f04d3.webp 1200w&#34;
-               src=&#34;http://localhost:1313/teaching/biost512/tabl2_hu_4afbd7b346be7bd4.webp&#34;
-               width=&#34;760&#34;
-               height=&#34;313&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;flex justify-center	&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;tabl32&#34; srcset=&#34;
-               /teaching/biost512/tabl1_hu_df076d67942d1918.webp 400w,
-               /teaching/biost512/tabl1_hu_dbaea5d0070fbf26.webp 760w,
-               /teaching/biost512/tabl1_hu_4b7967503c99b02c.webp 1200w&#34;
-               src=&#34;http://localhost:1313/teaching/biost512/tabl1_hu_df076d67942d1918.webp&#34;
-               width=&#34;760&#34;
-               height=&#34;121&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;flex justify-center	&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;bar&#34; srcset=&#34;
-               /teaching/biost512/box_hu_5cd94ae1692502d8.webp 400w,
-               /teaching/biost512/box_hu_a5edd1fe1b44e277.webp 760w,
-               /teaching/biost512/box_hu_5c66b5955f23748e.webp 1200w&#34;
-               src=&#34;http://localhost:1313/teaching/biost512/box_hu_5cd94ae1692502d8.webp&#34;
-               width=&#34;760&#34;
-               height=&#34;406&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;This project confirms that &lt;strong&gt;income group&lt;/strong&gt; is a &lt;strong&gt;significant determinant&lt;/strong&gt; of &lt;strong&gt;life expectancy in 2019&lt;/strong&gt;. Adjusting for health expenditure did not change the results and including 2001 life expectancy revealed its role as a critical factor influencing life expectancy trends. Further research could expand on this analysis with longitudinal studies, qualitative inquiries, cross-country comparisons and exploration of policy implications.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;dap2.pdf&#34;&gt;Download Full Project Report (PDF)&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/smwhikeh/biost_512&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Code Repository&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>BIOST 546 Machine Learning for Biomedical and Public Health Big Data</title>
-      <link>http://localhost:1313/teaching/biost546/</link>
-      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/biost546/</guid>
-      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
-&lt;p&gt;This course provided an introduction to &lt;strong&gt;statistical machine learning&lt;/strong&gt; methods for the analysis of biomedical data. It covered &lt;strong&gt;high dimensional regression&lt;/strong&gt; and &lt;strong&gt;classification methods&lt;/strong&gt;, &lt;strong&gt;variable selection techniques&lt;/strong&gt;, &lt;strong&gt;clustering&lt;/strong&gt; and &lt;strong&gt;dimension reduction&lt;/strong&gt; methods.&lt;/p&gt;
-&lt;p&gt;Through this course I was able to gain a better understanding of &lt;strong&gt;supervised&lt;/strong&gt; and &lt;strong&gt;unsupervised&lt;/strong&gt; machine learning models, characterize &lt;strong&gt;bias variance trade-off&lt;/strong&gt;, understand connections between &lt;strong&gt;machine learning approaches&lt;/strong&gt; and &lt;strong&gt;classical statistical techniques&lt;/strong&gt;, translate scientific problems in &lt;strong&gt;statistical models&lt;/strong&gt; that can be estimated using machine learning methods, select model&amp;rsquo;s &lt;strong&gt;hyper parameters&lt;/strong&gt; to &lt;strong&gt;minimize generalization error&lt;/strong&gt; (ex - out of sample error) and apply &lt;strong&gt;R&lt;/strong&gt; in variety of machine learning techniques (ex - &lt;strong&gt;lasso and ridge regression&lt;/strong&gt;, &lt;strong&gt;splines&lt;/strong&gt;, &lt;strong&gt;generalized linear models&lt;/strong&gt;, and &lt;strong&gt;neural nets&lt;/strong&gt;).&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;assignment-1&#34;&gt;Assignment #1&lt;/h2&gt;
-&lt;p&gt;This assignment analyzed &lt;strong&gt;medical costs&lt;/strong&gt; billed by health insurance and focused on the &lt;strong&gt;impact of BMI and smoking status&lt;/strong&gt; using &lt;strong&gt;regression modeling&lt;/strong&gt;. It explored the &lt;strong&gt;bias-variance trade-off&lt;/strong&gt; through &lt;strong&gt;conceptual visualizations&lt;/strong&gt; and &lt;strong&gt;numerical simulations&lt;/strong&gt;.&lt;/p&gt;
-&lt;h3 id=&#34;medical-cost-analysis&#34;&gt;Medical Cost Analysis&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Data Preprocessing&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Using the &lt;code&gt;Medical_Cost_2.RData&lt;/code&gt;, I loaded in the dataset and checked for missing values.&lt;/li&gt;
-&lt;li&gt;Removed missing data using &lt;code&gt;na.omit()&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Exploratory Data Analysis&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Created a scatter plot of &lt;code&gt;bmi (x-axis)&lt;/code&gt; vs &lt;code&gt;charges (y-axis)&lt;/code&gt; with color coding to distinguish smokers and non-smokers&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;flex justify-center	&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;scatter&#34; srcset=&#34;
-               /teaching/biost546/scatter1_hu_6543f1c6107aea03.webp 400w,
-               /teaching/biost546/scatter1_hu_8e8d2c6bb3146c21.webp 760w,
-               /teaching/biost546/scatter1_hu_ac993170de008ac2.webp 1200w&#34;
-               src=&#34;http://localhost:1313/teaching/biost546/scatter1_hu_6543f1c6107aea03.webp&#34;
-               width=&#34;680&#34;
-               height=&#34;476&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Regression Modeling&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Least-Squares Linear Models&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;Model 1: charges ~ bmi&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Model 2: charges ~ bmi + smoker&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Model 3: charges ~ bmi * smoker&lt;/code&gt; (interaction term included)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;Reported estimated &lt;strong&gt;regression coefficients&lt;/strong&gt; and &lt;strong&gt;interpretation&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Computed &lt;strong&gt;95% CI&lt;/strong&gt; for &lt;code&gt;bmi&lt;/code&gt; coefficient and provided interpretation&lt;/li&gt;
-&lt;li&gt;Plotted &lt;strong&gt;regression lines&lt;/strong&gt; on &lt;strong&gt;scatter plot&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Calculated &lt;strong&gt;mean squared error (MSE)&lt;/strong&gt; for each model&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Predicted&lt;/strong&gt; medical costs for smokers with &lt;code&gt;bmi = 29&lt;/code&gt; and &lt;code&gt;bmi = 31.5&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Computed and predicted&lt;/strong&gt; cost differences between smokers and non-smokers&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;flex justify-center	&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;scatter2&#34; srcset=&#34;
-               /teaching/biost546/scatter2_hu_dc9169b13f8fe7d7.webp 400w,
-               /teaching/biost546/scatter2_hu_77a19175a94a24e9.webp 760w,
-               /teaching/biost546/scatter2_hu_d1fae1d715316241.webp 1200w&#34;
-               src=&#34;http://localhost:1313/teaching/biost546/scatter2_hu_dc9169b13f8fe7d7.webp&#34;
-               width=&#34;670&#34;
-               height=&#34;461&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
-&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;&lt;strong&gt;Interaction Model with New Variable&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;Created &lt;code&gt;smoker_bmi30p&lt;/code&gt; a boolean variable for smokers with &lt;code&gt;bmi &amp;gt; 30&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Fit a linear model incorporating &lt;code&gt;bmi&lt;/code&gt;, &lt;code&gt;smoker&lt;/code&gt;, and &lt;code&gt;smoker_bmi30p&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Presented &lt;strong&gt;estimated coefficients&lt;/strong&gt; and assessed statistical significance&lt;/li&gt;
-&lt;li&gt;Discussed &lt;strong&gt;implications&lt;/strong&gt; of &lt;strong&gt;non-significant variables&lt;/strong&gt; and their effect on the scatter plot&lt;/li&gt;
-&lt;li&gt;Compared &lt;strong&gt;cost differences&lt;/strong&gt; using this model vs the previous approach&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;flex justify-center	&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;scatter3&#34; srcset=&#34;
-               /teaching/biost546/scatter3_hu_d07a02d82990c5f9.webp 400w,
-               /teaching/biost546/scatter3_hu_f009bc1161dd28e0.webp 760w,
-               /teaching/biost546/scatter3_hu_f4fafd66dc069ef0.webp 1200w&#34;
-               src=&#34;http://localhost:1313/teaching/biost546/scatter3_hu_d07a02d82990c5f9.webp&#34;
-               width=&#34;674&#34;
-               height=&#34;469&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
-&lt;h3 id=&#34;bias-variance-trade-off-analysis&#34;&gt;Bias-Variance Trade-off Analysis&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Conceptual Analysis&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Plot&lt;/strong&gt; showing squared bias, variance, irreducible error and expected prediction error as functions of model flexibility&lt;/li&gt;
-&lt;li&gt;Illustrated training and test errors across varying model complexity levels&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;flex justify-center	&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;bias&#34; srcset=&#34;
-               /teaching/biost546/bias_hu_baef079e25249ee3.webp 400w,
-               /teaching/biost546/bias_hu_43b65fd335965097.webp 760w,
-               /teaching/biost546/bias_hu_71b8892024e6c478.webp 1200w&#34;
-               src=&#34;http://localhost:1313/teaching/biost546/bias_hu_baef079e25249ee3.webp&#34;
-               width=&#34;506&#34;
-               height=&#34;356&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;flex justify-center	&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;test&#34; srcset=&#34;
-               /teaching/biost546/test_hu_7a42d3bbbb995c93.webp 400w,
-               /teaching/biost546/test_hu_ef7288dfb8ad4fec.webp 760w,
-               /teaching/biost546/test_hu_c4d3f7b4b6a1f22c.webp 1200w&#34;
-               src=&#34;http://localhost:1313/teaching/biost546/test_hu_7a42d3bbbb995c93.webp&#34;
-               width=&#34;506&#34;
-               height=&#34;373&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Numerical Simulations&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Explored &lt;strong&gt;bias-variance tradeoff&lt;/strong&gt; through numerical simulations. Investigated how model complexity affects bias and variance in regression.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Data Generation&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Generated &lt;code&gt;X&lt;/code&gt; using &lt;code&gt;rnorm()&lt;/code&gt; and noise $\varepsilon$
- using &lt;code&gt;runif()&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Defined true response function&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Predictor Variable (X):&lt;/strong&gt; A vector of length \( n = 30 \) generated using &lt;code&gt;rnorm()&lt;/code&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Noise (ε):&lt;/strong&gt; A vector of length \( n = 30 \) generated using &lt;code&gt;runif()&lt;/code&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Response Variable (Y):&lt;/strong&gt; Defined as:&lt;/p&gt;
-\[
-  Y = f_{true}(X) + \epsilon
-  \]&lt;p&gt;
-
-&lt;/p&gt;
-&lt;p&gt;where the true function is:&lt;/p&gt;
-\[
-  f_{true}(X) = 3 + 2X + 3X^3
-  \]&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;Model Fitting&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Fit the response variable \( Y \) using &lt;strong&gt;linear regression&lt;/strong&gt; with different polynomial representations:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-\[
-  f(X) = \beta_0 + \beta_1 X
-  \]&lt;/li&gt;
-&lt;li&gt;
-\[
-  f(X) = \beta_0 + \beta_1 X + \beta_2 X^2
-  \]&lt;/li&gt;
-&lt;li&gt;
-\[
-  f(X) = \beta_0 + \beta_1 X + \beta_2 X^2 + \beta_3 X^3 + \beta_4 X^4
-  \]&lt;/li&gt;
-&lt;li&gt;
-\[
-  f(X) = \beta_0 + \beta_1 X + \beta_3 X^3
-  \]&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;Model Evaluation&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;Training Error Analysis&lt;/strong&gt;&lt;br&gt;
-For each model, computed the &lt;strong&gt;training mean squared error (MSE)&lt;/strong&gt; and analyze how model complexity impacts in-sample performance.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Test Error Analysis&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Generated &lt;strong&gt;10,000 new test observations&lt;/strong&gt; using the same data generation process.&lt;/li&gt;
-&lt;li&gt;Evaluated the fitted models on this test set by computing the &lt;strong&gt;test MSE&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;Comparison of training vs. test MSE reveals insights into &lt;strong&gt;overfitting vs. underfitting&lt;/strong&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Comparison to True Model&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Computed the &lt;strong&gt;true regression function&amp;rsquo;s MSE&lt;/strong&gt; on both training and test data.&lt;/li&gt;
-&lt;li&gt;Compared the MSEs of the fitted models against the true function to assess bias and variance.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h3&gt;
-&lt;p&gt;This assignment provided &lt;strong&gt;insights&lt;/strong&gt; into medical cost data production using &lt;strong&gt;regression modeling&lt;/strong&gt; and highlighted the balance between &lt;strong&gt;model complexity&lt;/strong&gt; and &lt;strong&gt;predictive accuracy&lt;/strong&gt; through &lt;strong&gt;bias-variance trade-off&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;hw1.pdf&#34;&gt;Download Full Assignment Report (PDF)&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/smwhikeh/biost_546&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Code Repository&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
 </description>
     </item>
     
