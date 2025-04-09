@@ -5,7 +5,7 @@
     <link>http://localhost:1313/tags/data-science/</link>
       <atom:link href="http://localhost:1313/tags/data-science/index.xml" rel="self" type="application/rss+xml" />
     <description>Data Science</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 14 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 06 Dec 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://localhost:1313/media/icon_hu_65e1e165efa47c71.png</url>
       <title>Data Science</title>
@@ -15,83 +15,38 @@
     <item>
       <title>HMS 520 Introduction to Programming, Version Control, And Data Wrangling For Health Metrics Sciences</title>
       <link>http://localhost:1313/teaching/hms_520/</link>
-      <pubDate>Thu, 14 Dec 2023 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 06 Dec 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/teaching/hms_520/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
-&lt;p&gt;This class covered the presentation of the principles and methods of &lt;strong&gt;data description&lt;/strong&gt; and elementary &lt;strong&gt;parametric&lt;/strong&gt; and &lt;strong&gt;nonparametric&lt;/strong&gt; statistical analysis.&lt;/p&gt;
-&lt;p&gt;Examples were drawn from biomedical literature and real data sets were analyzed after a brief introduction to the use of standard statistical computer packages in &lt;code&gt;RStudio&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Statistical Techniques covered included &lt;strong&gt;description of samples&lt;/strong&gt;, comparison of &lt;strong&gt;two sample means&lt;/strong&gt; and &lt;strong&gt;proportions&lt;/strong&gt;, &lt;strong&gt;simple linear regression&lt;/strong&gt; and &lt;strong&gt;correlation&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;This class covered the basics of programming including &lt;strong&gt;communicating with machines&lt;/strong&gt;, writing &lt;strong&gt;clean code&lt;/strong&gt; and &lt;strong&gt;collaborative programming&lt;/strong&gt;. More specifically in this class I learned &lt;em&gt;git&lt;/em&gt; and &lt;em&gt;R&lt;/em&gt; and built a &lt;strong&gt;codebase&lt;/strong&gt; to deal with a series of tasks focused on &lt;strong&gt;data manipulation&lt;/strong&gt;. In this course I used &lt;em&gt;R&lt;/em&gt; to &lt;strong&gt;manipulate data&lt;/strong&gt; and create &lt;strong&gt;simple models&lt;/strong&gt; and &lt;strong&gt;analysis&lt;/strong&gt; as well as understanding, recognizing and writing clean code for readability and extendability. Finally, I also tested, debugged and documented R functions that I wrote.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;cardiovascular-health-study-statistical-data-analysis-plan-part-1&#34;&gt;Cardiovascular Health Study: Statistical Data Analysis Plan (Part 1)&lt;/h2&gt;
-&lt;h3 id=&#34;exploring-the-associations-between-hdl-cholesterol-family-history-of-heart-attack-and-coronary-heart-disease-in-adults-aged-65&#34;&gt;Exploring the Associations between HDL Cholesterol, Family History of Heart Attack, and Coronary Heart Disease in Adults Aged 65+&lt;/h3&gt;
-&lt;p&gt;Collaborators: Tessa Fujisaki MPH, Thania Solar M.D., MPH, and Sian Siam MPH.&lt;/p&gt;
-&lt;p&gt;This project investigated how high-density lipoprotein (HDL) cholesterol levels and family history of heart attack and modifiers related to the incidence of coronary heart disease (CHD) in older adults leveraging data from the Cardiovascular Health Study (CHS) dataset &lt;code&gt;chd3200.csv&lt;/code&gt;, a large-scale longitudinal study focused on adults aged 65 and above.&lt;/p&gt;
-&lt;p&gt;Our team developed a detailed &lt;strong&gt;statistical and inferential analysis plan&lt;/strong&gt; to examine key risk factors for CHD in an aging population. Using 6 years of follow up data, we explored whether family history of heart attack acts as an effect modifier in the relationship between HDL and CHD.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Key Objectives:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Determine which variables there is a &lt;strong&gt;statistically significant association&lt;/strong&gt; with CHD but in particular, between HDL cholesterol levels and the incident of CHD.&lt;/li&gt;
-&lt;li&gt;Assess whether family history of heart attack modifies this association&lt;/li&gt;
-&lt;li&gt;Explore other variables such as age, smoking status, alcohol use and insulin levels for potential associations with CHD.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Proposed Methodology:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Descriptive analysis&lt;/strong&gt; summarized distributions of continuous and categorical variables&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Bivariate analysis&lt;/strong&gt; examined relationships between CHD and individual predictors using cross-tabulations and summary statistics&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Inferential analysis&lt;/strong&gt; included proposal of t-test and chi-square test to asses the associations and interaction effects with a significance threshold of a = 0.05.&lt;/li&gt;
-&lt;li&gt;Addressed &lt;strong&gt;data cleaning&lt;/strong&gt; strategies including handling missing values, detecting outliers and identifying potential confounders and effect modifiers (ex - smoking status and age).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;cardiovascular-health-study-statistical-data-report-part-2&#34;&gt;Cardiovascular Health Study: Statistical Data Report (Part 2)&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Statistical data analysis&lt;/strong&gt; was conducted in &lt;strong&gt;Rstudio (v2023.06.2+561)&lt;/strong&gt; using packages such as &lt;code&gt;dyplr&lt;/code&gt;, &lt;code&gt;ggplot2&lt;/code&gt;, &lt;code&gt;e1071&lt;/code&gt;, &lt;code&gt;flextable&lt;/code&gt;, &lt;code&gt;gtsummary&lt;/code&gt; and &lt;code&gt;tidyr&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Data Analysis&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Descriptive Statistics&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Summary table&lt;/strong&gt; for continous variables (ex - age, HDL, insulin, alcohol) and categorical variables (CHD, FHHA, smoking status) was generated to examine distributions, skewness and central tendencies&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2 id=&#34;final-project-for-hms520-data-analysis-for-gbd-2021-tuberculosis-estimates-1990-2021&#34;&gt;Final Project for HMS520 Data Analysis for (GBD 2021) Tuberculosis Estimates 1990-2021&lt;/h2&gt;
+&lt;p&gt;Collaborator: Ye Htet Naing MD, MPH&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Background&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This project explored the &lt;strong&gt;global mortality trends&lt;/strong&gt; and &lt;strong&gt;risk factor&lt;/strong&gt; contributions to &lt;strong&gt;tuberculosis (TB)&lt;/strong&gt; between 2015 and 2019 using data from the &lt;strong&gt;Institute for Health Metrics and Evaluation (IHME) Global Burden of Disease 2021 (GBD 2021)&lt;/strong&gt; study. Access to the data can be found &lt;a href=&#34;https://ghdx.healthdata.org/record/ihme-data/gbd-2021-tuberculosis-incidence-mortality-1990-2021&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;. In support of the &lt;strong&gt;World Health Organization&amp;rsquo;s&lt;/strong&gt; End TB Strategy, which targeted a &lt;strong&gt;35% reduction&lt;/strong&gt; in TB mortality and a &lt;strong&gt;20% reduction&lt;/strong&gt; in TB incidence by 2020, we examined whether these goals were achieved across different regions and age groups, and how much modifiable risk factors like &lt;strong&gt;smoking&lt;/strong&gt;, &lt;strong&gt;alcohol use&lt;/strong&gt;, and &lt;strong&gt;diabetes&lt;/strong&gt; contributed to &lt;strong&gt;TB mortality&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Key Objectives&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Using GBD data we aimed to answer the following key questions:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;How have &lt;strong&gt;mortality rates&lt;/strong&gt; changed from 2015 to 2020 across different age groups and regions?&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Data Visualization&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Creation of &lt;strong&gt;histograms&lt;/strong&gt; and &lt;strong&gt;boxplot&lt;/strong&gt; to explore continuous variable distribution and bar chart to visualize categorical data and bivariate relationships&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;
+&lt;p&gt;What is the &lt;strong&gt;relative contribution&lt;/strong&gt; of different &lt;strong&gt;risk factors&lt;/strong&gt; (e.g., smoking, alcohol use, and diabetes) to TB mortality in 2015 and 2020?&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Bivariate Analysis&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;T-test&lt;/strong&gt; and &lt;strong&gt;chi-square test&lt;/strong&gt; performed to compare HDL levels, age, alcohol intake, insulin, smoking and FFHHA by CHD status&lt;/li&gt;
-&lt;li&gt;Individuals &lt;strong&gt;stratified&lt;/strong&gt; by HDL levels (&amp;lt;40 mg/dL vs &amp;gt;40 mg/dL) and FHHA to assess if FHHA modifies HDL-CHD relationship&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;
+&lt;p&gt;Do regions or age groups with &lt;strong&gt;higher reductions&lt;/strong&gt; in TB mortality also show lower contributions of risk factors?&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Effect Modification Testing&lt;/strong&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Data and Methods&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Our analysis included:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;We examined the &lt;strong&gt;stratified frequency&lt;/strong&gt; of CHD across HDL levels, separately for those with and without FHHA
-&lt;ul&gt;
-&lt;li&gt;Difference in frequencies suggested effect modification&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Preprocessing and Cleaning&lt;/strong&gt;: Filtering relevant columns, checking for missing data and creating derived variables&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Trend Analysis&lt;/strong&gt;: Calculated percent change in mortality by region and age groups (2015-2020)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Risk Factor Analysis&lt;/strong&gt;: Assessed proportion of TB mortality attributable to each risk factor&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Regression Analysis&lt;/strong&gt;: Explored associations between reductions in mortality and changes in attributable risks&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Results&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Descriptive Findings&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Mean HDL&lt;/strong&gt; was lower in individuals with CHD (51mg/dL)&lt;/li&gt;
-&lt;li&gt;Serum insulin and alcohol consumption was higher among individuals with CHD&lt;/li&gt;
-&lt;li&gt;13.5% of participants had CHD, 30.8% reported FHHA and 11.8% were current smokers&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Inferential Findings&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Two sample &lt;strong&gt;t-test&lt;/strong&gt; showed statistically significant difference in HDL levels between those with and without CHD (p &amp;lt; 0.001&amp;gt;)&lt;/li&gt;
-&lt;li&gt;FHHA &lt;strong&gt;modified the relationship&lt;/strong&gt; between HDL and cHD
-&lt;ul&gt;
-&lt;li&gt;Among those with HDL &amp;lt;40mg/dL, 25% of individuals with FHHA had CHD compared to 17% without FHHA&lt;/li&gt;
-&lt;li&gt;Among those with HDL &amp;gt;40mg/dL, 15% of individuals with FHHA had CHD compared to 11% without FHHA.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Key Visualizations&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 1: Mean Mortality Change from 2015 - 2020 (All Ages)&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -110,16 +65,17 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;flex justify-center	&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;CHD Box Plot&#34; srcset=&#34;
-               /teaching/hms_520/box_hu_a009da267a148a93.webp 400w,
-               /teaching/hms_520/box_hu_8f1a2742418e1756.webp 760w,
-               /teaching/hms_520/box_hu_d921eafd08f096a7.webp 1200w&#34;
-               src=&#34;http://localhost:1313/teaching/hms_520/box_hu_a009da267a148a93.webp&#34;
-               width=&#34;308&#34;
-               height=&#34;334&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;fig1&#34; srcset=&#34;
+               /teaching/hms_520/fig1_hu_3b23de452cd3ce4f.webp 400w,
+               /teaching/hms_520/fig1_hu_53e5064d59cc0545.webp 760w,
+               /teaching/hms_520/fig1_hu_22b29c1aa5abecc9.webp 1200w&#34;
+               src=&#34;http://localhost:1313/teaching/hms_520/fig1_hu_3b23de452cd3ce4f.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;514&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 2. Attributable Mortality by Age Group&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -138,195 +94,93 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;flex justify-center	&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;CHD   Bar Plot&#34; srcset=&#34;
-               /teaching/hms_520/bar_hu_e31185e99e201694.webp 400w,
-               /teaching/hms_520/bar_hu_eaba62a97707e34c.webp 760w,
-               /teaching/hms_520/bar_hu_58e379b6757f6f89.webp 1200w&#34;
-               src=&#34;http://localhost:1313/teaching/hms_520/bar_hu_e31185e99e201694.webp&#34;
-               width=&#34;502&#34;
-               height=&#34;448&#34;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;fig2&#34; srcset=&#34;
+               /teaching/hms_520/fig2_hu_386341b03ece85b8.webp 400w,
+               /teaching/hms_520/fig2_hu_dd59814b4541f014.webp 760w,
+               /teaching/hms_520/fig2_hu_94251a1b9ff9d6c0.webp 1200w&#34;
+               src=&#34;http://localhost:1313/teaching/hms_520/fig2_hu_386341b03ece85b8.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;508&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 3. Attributable Mortality by Region&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;fig3&#34; srcset=&#34;
+               /teaching/hms_520/fig3_hu_7089f42d46ba8e8d.webp 400w,
+               /teaching/hms_520/fig3_hu_445a76883a64bbf0.webp 760w,
+               /teaching/hms_520/fig3_hu_b883f7837a8ac8f9.webp 1200w&#34;
+               src=&#34;http://localhost:1313/teaching/hms_520/fig3_hu_7089f42d46ba8e8d.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;514&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Figure 4. Linear Regression: Mortality Reduction vs Risk Factor Contribution&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;fig4&#34; srcset=&#34;
+               /teaching/hms_520/fig4_hu_ac2936f7a2489a76.webp 400w,
+               /teaching/hms_520/fig4_hu_a958df59df345ec7.webp 760w,
+               /teaching/hms_520/fig4_hu_d754ce71856b1cf7.webp 1200w&#34;
+               src=&#34;http://localhost:1313/teaching/hms_520/fig4_hu_ac2936f7a2489a76.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;514&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Findings and Interpretation&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;We found that TB mortality has &lt;strong&gt;declined&lt;/strong&gt; globally between 2015 and 2020 with varying degrees of success by &lt;strong&gt;region&lt;/strong&gt;. Some regions exceeded the end TB targets while others lagged behind&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Older age groups&lt;/strong&gt; (50-69 and 70+) had higher rates of TB mortality, both in general and due to risk factors&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Smoking&lt;/strong&gt; was the leading attributable risk factor for TB mortality across most age group and regions, followed by alcohol and diabetes&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Regions with &lt;strong&gt;higher reductions&lt;/strong&gt; in TB mortality often had &lt;strong&gt;lower attributable mortality&lt;/strong&gt; from modifiable risks, suggesting successful implementation of broader public health interventions.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;This project found that &lt;strong&gt;lower HDL cholesterol&lt;/strong&gt; levels are &lt;strong&gt;significantly associated&lt;/strong&gt; with &lt;strong&gt;increased CHD risk&lt;/strong&gt; in older adults and that &lt;strong&gt;family history of heart attack&lt;/strong&gt; modifies this relationship. Therefore this shows the importance of early lipid screening, family history assessment and lifestyle interventions to prevent CHD in aging populations.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;dap.pdf&#34;&gt;Download Full Project Report (PDF)&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/smwhikeh/biost_511_dap&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Code Repository&lt;/a&gt;&lt;/p&gt;
-&lt;!-- [Hugo Blox Builder](https://hugoblox.com) is designed to give technical content creators a seamless experience. You can focus on the content and the Hugo Blox Builder which this template is built upon handles the rest.
-
-**Embed videos, podcasts, code, LaTeX math, and even test students!**
-
-On this page, you&#39;ll find some examples of the types of technical content that can be rendered with Hugo Blox.
-
-## Video
-
-Teach your course by sharing videos with your students. Choose from one of the following approaches:
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/D2vj0WcvH5c?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
-    &lt;/div&gt;
-
-
-**Youtube**:
-
-    {{&lt; youtube w7Ft2ymGmfc &gt;}}
-
-**Bilibili**:
-
-    {{&lt; bilibili id=&#34;BV1WV4y1r7DF&#34; &gt;}}
-
-**Video file**
-
-Videos may be added to a page by either placing them in your `assets/media/` media library or in your [page&#39;s folder](https://gohugo.io/content-management/page-bundles/), and then embedding them with the _video_ shortcode:
-
-    {{&lt; video src=&#34;my_video.mp4&#34; controls=&#34;yes&#34; &gt;}}
-
-## Podcast
-
-You can add a podcast or music to a page by placing the MP3 file in the page&#39;s folder or the media library folder and then embedding the audio on your page with the _audio_ shortcode:
-
-    {{&lt; audio src=&#34;ambient-piano.mp3&#34; &gt;}}
-
-Try it out:
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-&lt;audio controls &gt;
-  &lt;source src=&#34;http://localhost:1313/teaching/hms_520/ambient-piano.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-&lt;/audio&gt;
-
-
-## Test students
-
-Provide a simple yet fun self-assessment by revealing the solutions to challenges with the `spoiler` shortcode:
-
-```markdown
-{{&lt; spoiler text=&#34;👉 Click to view the solution&#34; &gt;}}
-You found me!
-{{&lt; /spoiler &gt;}}
-```
-
-renders as
-
-&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-2&#34;&gt;
-  &lt;summary class=&#34;cursor-pointer&#34;&gt;👉 Click to view the solution&lt;/summary&gt;
-  &lt;div class=&#34;rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2&#34;&gt;
-    You found me 🎉
-  &lt;/div&gt;
-&lt;/details&gt;
-
-## Math
-
-Hugo Blox Builder supports a Markdown extension for $\LaTeX$ math. You can enable this feature by toggling the `math` option in your `config/_default/params.yaml` file.
-
-To render _inline_ or _block_ math, wrap your LaTeX math with `{{&lt; math &gt;}}$...${{&lt; /math &gt;}}` or `{{&lt; math &gt;}}$$...$${{&lt; /math &gt;}}`, respectively.
-
-
-
-
-
-
-  
-    
-  
-
-&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
-&lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-&lt;/span&gt;
-  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;We wrap the LaTeX math in the Hugo Blox &lt;em&gt;math&lt;/em&gt; shortcode to prevent Hugo rendering our math as Markdown.&lt;/span&gt;
-&lt;/div&gt;
-
-Example **math block**:
-
-```latex
-{{&lt; math &gt;}}
-$$
-\gamma_{n} = \frac{ \left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T \left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}
-$$
-{{&lt; /math &gt;}}
-```
-
-renders as
-
-
-$$\gamma_{n} = \frac{ \left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T \left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}$$
-
-
-
-Example **inline math** `{{&lt; math &gt;}}$\nabla F(\mathbf{x}_{n})${{&lt; /math &gt;}}` renders as $\nabla F(\mathbf{x}_{n})$
-.
-
-Example **multi-line math** using the math linebreak (`\\`):
-
-```latex
-{{&lt; math &gt;}}
-$$f(k;p_{0}^{*}) = \begin{cases}p_{0}^{*} &amp; \text{if }k=1, \\
-1-p_{0}^{*} &amp; \text{if }k=0.\end{cases}$$
-{{&lt; /math &gt;}}
-```
-
-renders as
-
-
-
-$$
-f(k;p_{0}^{*}) = \begin{cases}p_{0}^{*} &amp; \text{if }k=1, \\
-1-p_{0}^{*} &amp; \text{if }k=0.\end{cases}
-$$
-
-
-
-
-## Code
-
-Hugo Blox Builder utilises Hugo&#39;s Markdown extension for highlighting code syntax. The code theme can be selected in the `config/_default/params.yaml` file.
-
-
-    ```python
-    import pandas as pd
-    data = pd.read_csv(&#34;data.csv&#34;)
-    data.head()
-    ```
-
-renders as
-
-```python
-import pandas as pd
-data = pd.read_csv(&#34;data.csv&#34;)
-data.head()
-```
-
-## Inline Images
-
-```go
-{{&lt; icon name=&#34;python&#34; &gt;}} Python
-```
-
-renders as
-
-
-  &lt;span class=&#34;inline-block  pr-1&#34;&gt;
-    &lt;svg style=&#34;height: 1em; transform: translateY(0.1em);&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; height=&#34;1em&#34; viewBox=&#34;0 0 448 512&#34; fill=&#34;currentColor&#34;&gt;&lt;path d=&#34;M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4.1-11.3 9.1-20.3 20.1-20.3zM167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4zm-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3.1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3z&#34;/&gt;&lt;/svg&gt;
-  &lt;/span&gt; Python
-
-## Did you find this page helpful? Consider sharing it 🙌
---&gt;
+&lt;p&gt;Our analysis shows the importance of &lt;strong&gt;age and region specific TB strategies&lt;/strong&gt; and highlights the ongoing role of &lt;strong&gt;modifiable risk factors in driving TB mortality&lt;/strong&gt;. These insights can inform &lt;strong&gt;tailored public health interventions&lt;/strong&gt; and help guide progress towards &lt;strong&gt;TB elimination&lt;/strong&gt; goals worldwide.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;hms_520_tb_final.pdf&#34;&gt;Download Project Report (PDF)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/smwhikeh/HMS_520_Final_Project_TB&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Code Repository&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

@@ -51,7 +51,14 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;flex justify-center	&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;scatter1.png&#34; alt=&#34;scatter&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;scatter&#34; srcset=&#34;
+               /teaching/biost546/scatter1_hu_6543f1c6107aea03.webp 400w,
+               /teaching/biost546/scatter1_hu_8e8d2c6bb3146c21.webp 760w,
+               /teaching/biost546/scatter1_hu_ac993170de008ac2.webp 1200w&#34;
+               src=&#34;http://localhost:1313/teaching/biost546/scatter1_hu_6543f1c6107aea03.webp&#34;
+               width=&#34;680&#34;
+               height=&#34;476&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Regression Modeling&lt;/strong&gt;&lt;/p&gt;
@@ -90,7 +97,14 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;flex justify-center	&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;scatter2.png&#34; alt=&#34;scatter2&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;scatter2&#34; srcset=&#34;
+               /teaching/biost546/scatter2_hu_dc9169b13f8fe7d7.webp 400w,
+               /teaching/biost546/scatter2_hu_77a19175a94a24e9.webp 760w,
+               /teaching/biost546/scatter2_hu_d1fae1d715316241.webp 1200w&#34;
+               src=&#34;http://localhost:1313/teaching/biost546/scatter2_hu_dc9169b13f8fe7d7.webp&#34;
+               width=&#34;670&#34;
+               height=&#34;461&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;ol start=&#34;2&#34;&gt;
@@ -121,7 +135,14 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;flex justify-center	&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;scatter3.png&#34; alt=&#34;scatter3&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;scatter3&#34; srcset=&#34;
+               /teaching/biost546/scatter3_hu_d07a02d82990c5f9.webp 400w,
+               /teaching/biost546/scatter3_hu_f009bc1161dd28e0.webp 760w,
+               /teaching/biost546/scatter3_hu_f4fafd66dc069ef0.webp 1200w&#34;
+               src=&#34;http://localhost:1313/teaching/biost546/scatter3_hu_d07a02d82990c5f9.webp&#34;
+               width=&#34;674&#34;
+               height=&#34;469&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;bias-variance-trade-off-analysis&#34;&gt;Bias-Variance Trade-off Analysis&lt;/h3&gt;
@@ -148,7 +169,14 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;flex justify-center	&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;bias.png&#34; alt=&#34;bias&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;bias&#34; srcset=&#34;
+               /teaching/biost546/bias_hu_baef079e25249ee3.webp 400w,
+               /teaching/biost546/bias_hu_43b65fd335965097.webp 760w,
+               /teaching/biost546/bias_hu_71b8892024e6c478.webp 1200w&#34;
+               src=&#34;http://localhost:1313/teaching/biost546/bias_hu_baef079e25249ee3.webp&#34;
+               width=&#34;506&#34;
+               height=&#34;356&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;
@@ -169,7 +197,14 @@
 
 &lt;figure  &gt;
   &lt;div class=&#34;flex justify-center	&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;test.png&#34; alt=&#34;test&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;test&#34; srcset=&#34;
+               /teaching/biost546/test_hu_7a42d3bbbb995c93.webp 400w,
+               /teaching/biost546/test_hu_ef7288dfb8ad4fec.webp 760w,
+               /teaching/biost546/test_hu_c4d3f7b4b6a1f22c.webp 1200w&#34;
+               src=&#34;http://localhost:1313/teaching/biost546/test_hu_7a42d3bbbb995c93.webp&#34;
+               width=&#34;506&#34;
+               height=&#34;373&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Numerical Simulations&lt;/strong&gt;&lt;/p&gt;

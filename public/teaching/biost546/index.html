@@ -391,62 +391,6 @@
 
 
 
-<link type="text/css" rel="stylesheet" href="/dist/pagefind/pagefind-ui.be766eb419317a14ec769d216e9779bfe8f3737c80e780f4ba0dafb57a41a482.css" integrity="sha256-vnZutBkxehTsdp0hbpd5v&#43;jzc3yA54D0ug2vtXpBpII=" />
-
-
-<script src="/dist/pagefind/pagefind-ui.87693d7c6f2b3b347ce359d0ede762c033419f0a32b22ce508c335a81d841f1b.js" integrity="sha256-h2k9fG8rOzR841nQ7ediwDNBnwoysizlCMM1qB2EHxs="></script>
-
-
-<script>window.hbb.pagefind = {"baseUrl":"/"};</script>
-
-<style>
-  html.dark {
-    --pagefind-ui-primary: #eeeeee;
-    --pagefind-ui-text: #eeeeee;
-    --pagefind-ui-background: #152028;
-    --pagefind-ui-border: #152028;
-    --pagefind-ui-tag: #152028;
-  }
-</style>
-
-<script>
-  window.addEventListener('DOMContentLoaded', (event) => {
-    new PagefindUI({
-      element: "#search",
-      showSubResults: true,
-      baseUrl: window.hbb.pagefind.baseUrl,
-      bundlePath: window.hbb.pagefind.baseUrl + "pagefind/",
-    });
-  });
-  document.addEventListener('DOMContentLoaded', () => {
-    let element = document.getElementById('search');
-    let trigger = document.getElementById('search_toggle');
-
-    if (trigger) {
-      trigger.addEventListener('click', () => {
-        element.classList.toggle('hidden');
-        element.querySelector("input").value = ""
-        element.querySelector("input").focus()
-
-        if (!element.classList.contains('hidden')) {
-          let clear_trigger = document.querySelector('.pagefind-ui__search-clear');
-
-          if (clear_trigger && !clear_trigger.hasAttribute('listenerOnClick')) {
-            clear_trigger.setAttribute('listenerOnClick', 'true');
-
-            clear_trigger.addEventListener('click', () => {
-              element.classList.toggle('hidden');
-            });
-          }
-        }
-
-      });
-    }
-  });
-</script>
-
-
-
 
 
 
@@ -737,13 +681,6 @@
       
       
       
-      <button
-        aria-label="search"
-        class="text-black hover:text-primary  inline-block px-3 text-xl dark:text-white"
-        id="search_toggle">
-        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" fill="currentColor"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
-      </button>
-      
 
       
       
@@ -757,8 +694,6 @@
   </nav>
 </header>
 
-
-<div id="search" class="hidden p-3"></div>
 
 
         
@@ -1141,7 +1076,14 @@
 
 <figure  >
   <div class="flex justify-center	">
-    <div class="w-100" ><img src="scatter1.png" alt="scatter" loading="lazy" data-zoomable /></div>
+    <div class="w-100" ><img alt="scatter" srcset="
+               /teaching/biost546/scatter1_hu_6543f1c6107aea03.webp 400w,
+               /teaching/biost546/scatter1_hu_8e8d2c6bb3146c21.webp 760w,
+               /teaching/biost546/scatter1_hu_ac993170de008ac2.webp 1200w"
+               src="/teaching/biost546/scatter1_hu_6543f1c6107aea03.webp"
+               width="680"
+               height="476"
+               loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
 <p><strong>Regression Modeling</strong></p>
@@ -1180,7 +1122,14 @@
 
 <figure  >
   <div class="flex justify-center	">
-    <div class="w-100" ><img src="scatter2.png" alt="scatter2" loading="lazy" data-zoomable /></div>
+    <div class="w-100" ><img alt="scatter2" srcset="
+               /teaching/biost546/scatter2_hu_dc9169b13f8fe7d7.webp 400w,
+               /teaching/biost546/scatter2_hu_77a19175a94a24e9.webp 760w,
+               /teaching/biost546/scatter2_hu_d1fae1d715316241.webp 1200w"
+               src="/teaching/biost546/scatter2_hu_dc9169b13f8fe7d7.webp"
+               width="670"
+               height="461"
+               loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
 <ol start="2">
@@ -1211,7 +1160,14 @@
 
 <figure  >
   <div class="flex justify-center	">
-    <div class="w-100" ><img src="scatter3.png" alt="scatter3" loading="lazy" data-zoomable /></div>
+    <div class="w-100" ><img alt="scatter3" srcset="
+               /teaching/biost546/scatter3_hu_d07a02d82990c5f9.webp 400w,
+               /teaching/biost546/scatter3_hu_f009bc1161dd28e0.webp 760w,
+               /teaching/biost546/scatter3_hu_f4fafd66dc069ef0.webp 1200w"
+               src="/teaching/biost546/scatter3_hu_d07a02d82990c5f9.webp"
+               width="674"
+               height="469"
+               loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
 <h3 id="bias-variance-trade-off-analysis">Bias-Variance Trade-off Analysis</h3>
@@ -1238,7 +1194,14 @@
 
 <figure  >
   <div class="flex justify-center	">
-    <div class="w-100" ><img src="bias.png" alt="bias" loading="lazy" data-zoomable /></div>
+    <div class="w-100" ><img alt="bias" srcset="
+               /teaching/biost546/bias_hu_baef079e25249ee3.webp 400w,
+               /teaching/biost546/bias_hu_43b65fd335965097.webp 760w,
+               /teaching/biost546/bias_hu_71b8892024e6c478.webp 1200w"
+               src="/teaching/biost546/bias_hu_baef079e25249ee3.webp"
+               width="506"
+               height="356"
+               loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
 <p>
@@ -1259,7 +1222,14 @@
 
 <figure  >
   <div class="flex justify-center	">
-    <div class="w-100" ><img src="test.png" alt="test" loading="lazy" data-zoomable /></div>
+    <div class="w-100" ><img alt="test" srcset="
+               /teaching/biost546/test_hu_7a42d3bbbb995c93.webp 400w,
+               /teaching/biost546/test_hu_ef7288dfb8ad4fec.webp 760w,
+               /teaching/biost546/test_hu_c4d3f7b4b6a1f22c.webp 1200w"
+               src="/teaching/biost546/test_hu_7a42d3bbbb995c93.webp"
+               width="506"
+               height="373"
+               loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
 <p><strong>Numerical Simulations</strong></p>
