@@ -40,11 +40,11 @@ profiles:
   - icon: brands/github
     url: https://github.com/smwhikeh
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/sophie-mei-lin-whikehart-1084b4196/
+    url: https://www.linkedin.com/in/sophie-whikehart-mph-1084b4196/
   - icon: academicons/google-scholar
     url: https://scholar.google.com/citations?user=yXck-7oAAAAJ&hl=en
   - icon: academicons/orcid
-    url: https://orcid.org/my-orcid?orcid=0000-0001-7919-9056
+    url: https://orcid.org/0000-0001-7919-9056
 
 interests:
   - Biomedical Data Analysis 
