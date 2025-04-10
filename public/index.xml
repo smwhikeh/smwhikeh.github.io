@@ -34,6 +34,17 @@
     </item>
     
     <item>
+      <title>Long-Term Effects of Select Diarrheal Pathoegns on Childhood Growth</title>
+      <link>http://localhost:1313/teaching/mph_thesis/</link>
+      <pubDate>Fri, 21 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/teaching/mph_thesis/</guid>
+      <description>&lt;iframe src=&#34;Whikehart_Thesis_Presentation.pptx.pdf#toolbar=0&amp;navpanes=0&amp;scrollbar=0&amp;view=FitH&#34; 
+        width=&#34;100%&#34; 
+        height=&#34;600px&#34;&gt;
+&lt;/iframe&gt;</description>
+    </item>
+    
+    <item>
       <title>BIOST 546 Machine Learning for Biomedical and Public Health Big Data</title>
       <link>http://localhost:1313/teaching/biost546/</link>
       <pubDate>Sun, 16 Mar 2025 00:00:00 +0000</pubDate>
@@ -509,12 +520,15 @@ consistently showed the &lt;strong&gt;highest increases&lt;/strong&gt; in mortal
       <pubDate>Sat, 24 Aug 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/teaching/info201/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
-&lt;p&gt;This course focused on data programming. It was in many ways, similar to traditional programming courses but the focus was on topics that were more relevant for data handling. This included data frames, selecting and filtering observations, computing summaries and making plots. After finishing this course I understood the basics of programming such as variables, loops, if/else and functions. I was able to solve programming tasks with R, load, save and manipulate data. I was also able to clean, merge and reshape datasets. Finally I also created appealing visualizations.&lt;/p&gt;
+&lt;p&gt;This course focused on &lt;strong&gt;data programming&lt;/strong&gt;. It was in many ways, similar to traditional programming courses but the focus was on topics that were more relevant for &lt;strong&gt;data handling&lt;/strong&gt;. This included &lt;strong&gt;data frames&lt;/strong&gt;, &lt;strong&gt;selecting and filtering observations&lt;/strong&gt;, &lt;strong&gt;computing summaries&lt;/strong&gt; and &lt;strong&gt;making plots&lt;/strong&gt;. After finishing this course I understood the basics of programming such as &lt;strong&gt;variables, loops, if/else and functions&lt;/strong&gt;. I was able to solve programming tasks with &lt;strong&gt;R&lt;/strong&gt;, &lt;strong&gt;load&lt;/strong&gt;, &lt;strong&gt;save and manipulate data&lt;/strong&gt;. I was also able to &lt;strong&gt;clean, merge and reshape datasets&lt;/strong&gt;. Finally I also created appealing &lt;strong&gt;data visualizations&lt;/strong&gt;.&lt;/p&gt;
+&lt;hr&gt;
 &lt;h2 id=&#34;final-project-for-info-201-trends-and-disparities-in-cirrhosis-mortality-and-alcohol-use-prevalence-in-the-united-states-2002---2012&#34;&gt;Final Project for INFO 201 Trends and Disparities in Cirrhosis Mortality and Alcohol Use Prevalence in the United States (2002 - 2012)&lt;/h2&gt;
 &lt;iframe src=&#34;presentation.pdf#toolbar=0&amp;navpanes=0&amp;scrollbar=0&amp;view=FitH&#34; 
         width=&#34;100%&#34; 
         height=&#34;600px&#34;&gt;
 &lt;/iframe&gt;
+&lt;p&gt;&lt;a href=&#34;final_report_2aa_included.pdf&#34;&gt;Download Project Report (PDF)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/smwhikeh/HMS_520_Final_Project_TB&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Code Repository&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -1201,7 +1215,7 @@ renders as
 
 
 
-&lt;div id=&#34;chart-728564319&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-679284315&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -1219,7 +1233,7 @@ renders as
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-728564319&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-679284315&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();

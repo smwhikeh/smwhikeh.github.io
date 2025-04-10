@@ -5,7 +5,7 @@
     <link>http://localhost:1313/tags/public-health/</link>
       <atom:link href="http://localhost:1313/tags/public-health/index.xml" rel="self" type="application/rss+xml" />
     <description>Public Health</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 24 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 08 Mar 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://localhost:1313/media/icon_hu_65e1e165efa47c71.png</url>
       <title>Public Health</title>
@@ -13,11 +13,15 @@
     </image>
     
     <item>
-      <title>HMS 520</title>
-      <link>http://localhost:1313/teaching/phi/</link>
-      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/teaching/phi/</guid>
-      <description></description>
+      <title>MPH Thesis - Long-Term Effects of Select Diarrheal Pathoegns on Childhood Growth</title>
+      <link>http://localhost:1313/teaching/mph_thesis/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/teaching/mph_thesis/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;iframe src=&#34;Whikehart_Thesis_Presentation.pptx.pdf#toolbar=0&amp;navpanes=0&amp;scrollbar=0&amp;view=FitH&#34; 
+        width=&#34;100%&#34; 
+        height=&#34;600px&#34;&gt;
+&lt;/iframe&gt;</description>
     </item>
     
   </channel>
