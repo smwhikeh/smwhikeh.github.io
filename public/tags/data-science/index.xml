@@ -163,24 +163,63 @@
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Findings and Interpretation&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Our analysis examined TB mortality trends from 2015 to 2020 across regions, age groups and risk factors.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Regional and Age-Specific Mortality Trends&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;We found that TB mortality has &lt;strong&gt;declined&lt;/strong&gt; globally between 2015 and 2020 with varying degrees of success by &lt;strong&gt;region&lt;/strong&gt;. Some regions exceeded the end TB targets while others lagged behind&lt;/p&gt;
+&lt;p&gt;TB mortality changes &lt;strong&gt;varied widely by region&lt;/strong&gt;, Eastern Europe, Central Europe and Central Asia had the &lt;strong&gt;greatest reductions&lt;/strong&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Older age groups&lt;/strong&gt; (50-69 and 70+) had higher rates of TB mortality, both in general and due to risk factors&lt;/p&gt;
+&lt;p&gt;In contrast, High-income North America, Oceania and Central Latin America experiences &lt;strong&gt;increases&lt;/strong&gt; which point to potential &lt;strong&gt;systemic&lt;/strong&gt; or &lt;strong&gt;healthcare challenges&lt;/strong&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Smoking&lt;/strong&gt; was the leading attributable risk factor for TB mortality across most age group and regions, followed by alcohol and diabetes&lt;/p&gt;
+&lt;p&gt;Across regions, adults (ages 50-69 and 70+)
+consistently showed the &lt;strong&gt;highest increases&lt;/strong&gt; in mortality which emphasize the need for &lt;strong&gt;targeted interventions for aging population&lt;/strong&gt;s.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Risk Factor Contributions&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Risk patterns shifted with age: ages &lt;strong&gt;15-49 Diabetes&lt;/strong&gt; was the leading contributor and ages &lt;strong&gt;50-69 and 70+ alcohol use&lt;/strong&gt; became dominant, with smoking also significant among older adults.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Regions with &lt;strong&gt;higher reductions&lt;/strong&gt; in TB mortality often had &lt;strong&gt;lower attributable mortality&lt;/strong&gt; from modifiable risks, suggesting successful implementation of broader public health interventions.&lt;/p&gt;
+&lt;p&gt;Regionally, Sub-Saharan Africa and South Asia had the &lt;strong&gt;highest risk-attributable mortality&lt;/strong&gt; which likely reflect &lt;strong&gt;disparities&lt;/strong&gt; in healthcare access and chronic disease management.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;These findings highlight the need for &lt;strong&gt;age-specific&lt;/strong&gt; and &lt;strong&gt;region-specific&lt;/strong&gt; prevention strategies.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Link Between Mortality Reduction and Risk Factors&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A linear regression analysis showed &lt;strong&gt;no significant relationship&lt;/strong&gt; between mortality reduction and average risk factor contribution.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;This suggests that mortality improvements may be driven by more &lt;strong&gt;broader healthcare advancements&lt;/strong&gt; than by reductions in individual risk factors.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Future efforts should consider &lt;strong&gt;additional determinants&lt;/strong&gt; of TB mortality to guide policy and intervention priorities.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Conclusion&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Our analysis shows the importance of &lt;strong&gt;age and region specific TB strategies&lt;/strong&gt; and highlights the ongoing role of &lt;strong&gt;modifiable risk factors in driving TB mortality&lt;/strong&gt;. These insights can inform &lt;strong&gt;tailored public health interventions&lt;/strong&gt; and help guide progress towards &lt;strong&gt;TB elimination&lt;/strong&gt; goals worldwide.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;hms_520_tb_final.pdf&#34;&gt;Download Project Report (PDF)&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/smwhikeh/HMS_520_Final_Project_TB&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Code Repository&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>INFO 201 Foundational Skills in Data Programming</title>
+      <link>http://localhost:1313/teaching/info201/</link>
+      <pubDate>Sat, 24 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/teaching/info201/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;This course focused on data programming. It was in many ways, similar to traditional programming courses but the focus was on topics that were more relevant for data handling. This included data frames, selecting and filtering observations, computing summaries and making plots. After finishing this course I understood the basics of programming such as variables, loops, if/else and functions. I was able to solve programming tasks with R, load, save and manipulate data. I was also able to clean, merge and reshape datasets. Finally I also created appealing visualizations.&lt;/p&gt;
+&lt;h2 id=&#34;final-project-for-info-201-trends-and-disparities-in-cirrhosis-mortality-and-alcohol-use-prevalence-in-the-united-states-2002---2012&#34;&gt;Final Project for INFO 201 Trends and Disparities in Cirrhosis Mortality and Alcohol Use Prevalence in the United States (2002 - 2012)&lt;/h2&gt;
+&lt;iframe src=&#34;presentation.pdf#toolbar=0&amp;navpanes=0&amp;scrollbar=0&amp;view=FitH&#34; 
+        width=&#34;100%&#34; 
+        height=&#34;600px&#34;&gt;
+&lt;/iframe&gt;
 </description>
     </item>
     

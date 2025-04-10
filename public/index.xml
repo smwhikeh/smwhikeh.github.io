@@ -504,6 +504,21 @@ consistently showed the &lt;strong&gt;highest increases&lt;/strong&gt; in mortal
     </item>
     
     <item>
+      <title>INFO 201 Foundational Skills in Data Programming</title>
+      <link>http://localhost:1313/teaching/info201/</link>
+      <pubDate>Sat, 24 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/teaching/info201/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;This course focused on data programming. It was in many ways, similar to traditional programming courses but the focus was on topics that were more relevant for data handling. This included data frames, selecting and filtering observations, computing summaries and making plots. After finishing this course I understood the basics of programming such as variables, loops, if/else and functions. I was able to solve programming tasks with R, load, save and manipulate data. I was also able to clean, merge and reshape datasets. Finally I also created appealing visualizations.&lt;/p&gt;
+&lt;h2 id=&#34;final-project-for-info-201-trends-and-disparities-in-cirrhosis-mortality-and-alcohol-use-prevalence-in-the-united-states-2002---2012&#34;&gt;Final Project for INFO 201 Trends and Disparities in Cirrhosis Mortality and Alcohol Use Prevalence in the United States (2002 - 2012)&lt;/h2&gt;
+&lt;iframe src=&#34;presentation.pdf#toolbar=0&amp;navpanes=0&amp;scrollbar=0&amp;view=FitH&#34; 
+        width=&#34;100%&#34; 
+        height=&#34;600px&#34;&gt;
+&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Morphological Simulation Tests the Limits on Phenotype Discovery in 3D Image Analysis</title>
       <link>http://localhost:1313/publication/preprint/</link>
       <pubDate>Tue, 02 Jul 2024 00:00:00 +0000</pubDate>
@@ -1186,7 +1201,7 @@ renders as
 
 
 
-&lt;div id=&#34;chart-513492876&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-728564319&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -1204,7 +1219,7 @@ renders as
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-513492876&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-728564319&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
