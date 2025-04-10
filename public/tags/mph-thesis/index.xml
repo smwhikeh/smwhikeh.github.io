@@ -13,12 +13,22 @@
     </image>
     
     <item>
-      <title>Long-Term Effects of Select Diarrheal Pathoegns on Childhood Growth</title>
+      <title>Long-Term Effects of Select Diarrheal Pathogens on Childhood Growth</title>
       <link>http://localhost:1313/teaching/mph_thesis/</link>
       <pubDate>Fri, 21 Mar 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/teaching/mph_thesis/</guid>
-      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
-&lt;iframe src=&#34;Whikehart_Thesis_Presentation.pptx.pdf#toolbar=0&amp;navpanes=0&amp;scrollbar=0&amp;view=FitH&#34; 
+      <description>&lt;iframe src=&#34;Whikehart_Thesis_Presentation.pptx.pdf#toolbar=0&amp;navpanes=0&amp;scrollbar=0&amp;view=FitH&#34; 
+        width=&#34;100%&#34; 
+        height=&#34;600px&#34;&gt;
+&lt;/iframe&gt;</description>
+    </item>
+    
+    <item>
+      <title>Practicum</title>
+      <link>http://localhost:1313/teaching/mph_practicum/</link>
+      <pubDate>Tue, 18 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/teaching/mph_practicum/</guid>
+      <description>&lt;iframe src=&#34;Whikehart_Thesis_Presentation.pptx.pdf#toolbar=0&amp;navpanes=0&amp;scrollbar=0&amp;view=FitH&#34; 
         width=&#34;100%&#34; 
         height=&#34;600px&#34;&gt;
 &lt;/iframe&gt;</description>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MPH Practicum | Sophie Whikehart</title>
+    <link>http://localhost:1313/tags/mph-practicum/</link>
+      <atom:link href="http://localhost:1313/tags/mph-practicum/index.xml" rel="self" type="application/rss+xml" />
+    <description>MPH Practicum</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 18 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu_65e1e165efa47c71.png</url>
+      <title>MPH Practicum</title>
+      <link>http://localhost:1313/tags/mph-practicum/</link>
+    </image>
+    
+    <item>
+      <title>Exploring Barriers and Perceptions of Cystic Fibrosis (CF) Clinical Trial Participation Among Racial and Ethnic Minoritized Populations in the United States</title>
+      <link>http://localhost:1313/teaching/mph_practicum/</link>
+      <pubDate>Tue, 18 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/teaching/mph_practicum/</guid>
+      <description>&lt;iframe src=&#34;Sophie_Whikehart_Practicum Poster Final.pdf#toolbar=0&amp;navpanes=0&amp;scrollbar=0&amp;view=FitH&#34; 
+        width=&#34;100%&#34; 
+        height=&#34;600px&#34;&gt;
+&lt;/iframe&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
